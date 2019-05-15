@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TakePhotoManager" customModule="VLC" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TakePhotoManager" customModule="TakePhotoManager" customModuleProvider="target">
             <connections>
                 <outlet property="TakeImgeButton" destination="1Yr-7K-Lqi" id="SUs-sb-tn4"/>
                 <outlet property="closeButton" destination="mio-Vc-B4U" id="mtj-bI-OSy"/>
@@ -58,7 +58,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Yr-7K-Lqi">
-                    <rect key="frame" x="147" y="577" width="80" height="80"/>
+                    <rect key="frame" x="147.5" y="577" width="80" height="80"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="80" id="E9O-hC-cx4"/>
                         <constraint firstAttribute="height" constant="80" id="tbk-gt-JO3"/>
@@ -90,7 +90,7 @@
                 <constraint firstItem="1Yr-7K-Lqi" firstAttribute="centerX" secondItem="mWm-8S-JkT" secondAttribute="centerX" id="nLn-jj-PB4"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZRy-jV-sGB"/>
-            <point key="canvasLocation" x="-1633" y="-55"/>
+            <point key="canvasLocation" x="-1799" y="-63"/>
         </view>
     </objects>
     <resources>

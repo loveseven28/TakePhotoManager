@@ -9,12 +9,24 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var takePhotoButton: UIButton!
+    var cameraManager: CameraManager?
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        cameraManager = CameraManager(chooseImageButton: takePhotoButton, rootViewController: self)
+        cameraManager!.delegate = self
     }
+}
 
-
+extension ViewController: CameraManagerDelegate {
+    func cameraManager(_ cameraManager: CameraManager, didChoose image: UIImage) {
+        
+    }
+    
+    func cameraManager(_ cameraManagerDidCancel: CameraManager) {
+        
+    }
+    
+    
 }
 

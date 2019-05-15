@@ -13,7 +13,7 @@ import UIKit
     @objc optional func cameraManager(_ cameraManager: CameraManager, didSave image: UIImage, withDirectory path: URL)
 }
 class CameraManager: NSObject{
-    var delagate: CameraManagerDelegate?
+    var delegate: CameraManagerDelegate?
     let rootViewController: UIViewController
     let chooseImageButton : UIButton
     init(chooseImageButton: UIButton, rootViewController: UIViewController) {
@@ -60,7 +60,7 @@ class CameraManager: NSObject{
             imagePicker.sourceType = .photoLibrary;
             imagePicker.allowsEditing = true
             imagePicker.delegate = self
-            imagePicker.navigationBar.tintColor = UIColor.white
+            imagePicker.navigationBar.tintColor = UIColor.orange
             rootViewController.present(imagePicker, animated: true, completion: nil)
             
         }
@@ -155,7 +155,7 @@ extension CameraManager : UIImagePickerControllerDelegate, UINavigationControlle
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
             if picker.sourceType == .photoLibrary {
-                self.delagate?.cameraManager(self, didChoose: image)
+                self.delegate?.cameraManager(self, didChoose: image)
                 self.hideLoading()
 //                self.saveImageToDocumentDirectory(image: image)
             }
@@ -169,13 +169,13 @@ extension CameraManager : UIImagePickerControllerDelegate, UINavigationControlle
     public func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         rootViewController.dismiss(animated: true, completion: nil)
         self.hideLoading()
-        self.delagate?.cameraManager(self)
+        self.delegate?.cameraManager(self)
     }
 }
 
 extension CameraManager: TakePhotoManagerDelegate {
     func imageDidGet(image: UIImage) {
-        self.delagate?.cameraManager(self, didChoose: image)
+        self.delegate?.cameraManager(self, didChoose: image)
 //        self.saveImageToDocumentDirectory(image: image)
     }
 }

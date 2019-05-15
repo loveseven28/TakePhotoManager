@@ -77,6 +77,8 @@ class TakePhotoManager: UIViewController{
             let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
             alert.addAction(okAction)
             self.present(alert, animated: true, completion: nil)
+        @unknown default:
+            fatalError()
         }
     }
   
@@ -172,7 +174,7 @@ class TakePhotoManager: UIViewController{
         }
         
         //Create new camera position
-        var newCamera: AVCaptureDevice! = nil
+        var newCamera: AVCaptureDevice? = nil
         if let input = currentCameraInput {
             input.device.hasMediaType(.video)
             if input.device.position == .back {
@@ -186,19 +188,24 @@ class TakePhotoManager: UIViewController{
         
         //New input
         var newVideoInput: AVCaptureDeviceInput! = nil
-        do {
-            newVideoInput = try AVCaptureDeviceInput(device: newCamera)
-        } catch {
-            print("Couldn't create new camera \(error.localizedDescription)")
-        }
-        
-        if let newInput = newVideoInput {
-            if captureSession.canAddInput(newInput) {
-                captureSession.addInput(newInput)
+        if let newCame = newCamera {
+            do {
+                newVideoInput = try AVCaptureDeviceInput(device: newCame)
+            } catch {
+                print("Couldn't create new camera \(error.localizedDescription)")
             }
+            
+            if let newInput = newVideoInput {
+                if captureSession.canAddInput(newInput) {
+                    captureSession.addInput(newInput)
+                }
+            }
+            
+            captureSession.commitConfiguration()
+        } else {
+            print("Couldn't create new camera")
         }
         
-        captureSession.commitConfiguration()
     }
     
     private func cameraWith(postion: AVCaptureDevice.Position) -> AVCaptureDevice? {
