@@ -22,6 +22,28 @@
 		3904C7A02282DCD400D3D057 /* TakePhotoManager.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3904C7982282DCD400D3D057 /* TakePhotoManager.xib */; };
 		3904C7A12282DCD400D3D057 /* CropImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3904C7992282DCD400D3D057 /* CropImageViewController.xib */; };
 		3904C7A22282DCD400D3D057 /* PreviewImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3904C79A2282DCD400D3D057 /* PreviewImageController.xib */; };
+		39159801228D689600152279 /* UILabelX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597EB228D689400152279 /* UILabelX.swift */; };
+		39159802228D689600152279 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597EC228D689400152279 /* UIBarButtonItem+Extension.swift */; };
+		39159803228D689600152279 /* UIViewXRadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597ED228D689400152279 /* UIViewXRadialGradient.swift */; };
+		39159804228D689600152279 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597EE228D689400152279 /* UIWindow+Extension.swift */; };
+		39159805228D689600152279 /* UITextFieldX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597EF228D689400152279 /* UITextFieldX.swift */; };
+		39159806228D689600152279 /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597F0228D689400152279 /* UIScreen+Extension.swift */; };
+		39159807228D689600152279 /* UISliderX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597F1228D689400152279 /* UISliderX.swift */; };
+		39159808228D689600152279 /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597F2228D689500152279 /* UIViewX.swift */; };
+		39159809228D689600152279 /* UIViewAnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597F3228D689500152279 /* UIViewAnchorPoint.swift */; };
+		3915980A228D689600152279 /* UIStoryboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597F4228D689500152279 /* UIStoryboard+Extension.swift */; };
+		3915980B228D689600152279 /* ViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597F5228D689500152279 /* ViewBase.swift */; };
+		3915980C228D689600152279 /* UINavigation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597F6228D689500152279 /* UINavigation+Extension.swift */; };
+		3915980D228D689600152279 /* BadgeButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597F7228D689500152279 /* BadgeButton+Extension.swift */; };
+		3915980E228D689600152279 /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597F8228D689500152279 /* UIButtonX.swift */; };
+		3915980F228D689600152279 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597F9228D689500152279 /* UIColor+Extension.swift */; };
+		39159810228D689600152279 /* UITextViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597FA228D689500152279 /* UITextViewX.swift */; };
+		39159811228D689600152279 /* UIViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597FB228D689500152279 /* UIViewControllerX.swift */; };
+		39159812228D689600152279 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597FC228D689500152279 /* Double+Extension.swift */; };
+		39159813228D689600152279 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597FD228D689600152279 /* String+Extension.swift */; };
+		39159814228D689600152279 /* UIImageViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597FE228D689600152279 /* UIImageViewX.swift */; };
+		39159815228D689600152279 /* Date-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597FF228D689600152279 /* Date-Helper.swift */; };
+		39159816228D689600152279 /* UIVisualEffectViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39159800228D689600152279 /* UIVisualEffectViewX.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +85,28 @@
 		3904C7982282DCD400D3D057 /* TakePhotoManager.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TakePhotoManager.xib; sourceTree = "<group>"; };
 		3904C7992282DCD400D3D057 /* CropImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CropImageViewController.xib; sourceTree = "<group>"; };
 		3904C79A2282DCD400D3D057 /* PreviewImageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewImageController.xib; sourceTree = "<group>"; };
+		391597EB228D689400152279 /* UILabelX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelX.swift; sourceTree = "<group>"; };
+		391597EC228D689400152279 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		391597ED228D689400152279 /* UIViewXRadialGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewXRadialGradient.swift; sourceTree = "<group>"; };
+		391597EE228D689400152279 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
+		391597EF228D689400152279 /* UITextFieldX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldX.swift; sourceTree = "<group>"; };
+		391597F0228D689400152279 /* UIScreen+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
+		391597F1228D689400152279 /* UISliderX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISliderX.swift; sourceTree = "<group>"; };
+		391597F2228D689500152279 /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
+		391597F3228D689500152279 /* UIViewAnchorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAnchorPoint.swift; sourceTree = "<group>"; };
+		391597F4228D689500152279 /* UIStoryboard+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extension.swift"; sourceTree = "<group>"; };
+		391597F5228D689500152279 /* ViewBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBase.swift; sourceTree = "<group>"; };
+		391597F6228D689500152279 /* UINavigation+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigation+Extension.swift"; sourceTree = "<group>"; };
+		391597F7228D689500152279 /* BadgeButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BadgeButton+Extension.swift"; sourceTree = "<group>"; };
+		391597F8228D689500152279 /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
+		391597F9228D689500152279 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		391597FA228D689500152279 /* UITextViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewX.swift; sourceTree = "<group>"; };
+		391597FB228D689500152279 /* UIViewControllerX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerX.swift; sourceTree = "<group>"; };
+		391597FC228D689500152279 /* Double+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		391597FD228D689600152279 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		391597FE228D689600152279 /* UIImageViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewX.swift; sourceTree = "<group>"; };
+		391597FF228D689600152279 /* Date-Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date-Helper.swift"; sourceTree = "<group>"; };
+		39159800228D689600152279 /* UIVisualEffectViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVisualEffectViewX.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +157,7 @@
 		3904C7632282DC9000D3D057 /* TakePhotoManager */ = {
 			isa = PBXGroup;
 			children = (
+				391597EA228D687C00152279 /* Extension */,
 				3904C7922282DCD400D3D057 /* ManagerImage */,
 				3904C7642282DC9000D3D057 /* AppDelegate.swift */,
 				3904C7662282DC9000D3D057 /* ViewController.swift */,
@@ -155,6 +200,35 @@
 				3904C79A2282DCD400D3D057 /* PreviewImageController.xib */,
 			);
 			path = ManagerImage;
+			sourceTree = "<group>";
+		};
+		391597EA228D687C00152279 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				391597F7228D689500152279 /* BadgeButton+Extension.swift */,
+				391597FF228D689600152279 /* Date-Helper.swift */,
+				391597FC228D689500152279 /* Double+Extension.swift */,
+				391597FD228D689600152279 /* String+Extension.swift */,
+				391597EC228D689400152279 /* UIBarButtonItem+Extension.swift */,
+				391597F8228D689500152279 /* UIButtonX.swift */,
+				391597F9228D689500152279 /* UIColor+Extension.swift */,
+				391597FE228D689600152279 /* UIImageViewX.swift */,
+				391597EB228D689400152279 /* UILabelX.swift */,
+				391597F6228D689500152279 /* UINavigation+Extension.swift */,
+				391597F0228D689400152279 /* UIScreen+Extension.swift */,
+				391597F1228D689400152279 /* UISliderX.swift */,
+				391597F4228D689500152279 /* UIStoryboard+Extension.swift */,
+				391597EF228D689400152279 /* UITextFieldX.swift */,
+				391597FA228D689500152279 /* UITextViewX.swift */,
+				391597F3228D689500152279 /* UIViewAnchorPoint.swift */,
+				391597FB228D689500152279 /* UIViewControllerX.swift */,
+				391597F2228D689500152279 /* UIViewX.swift */,
+				391597ED228D689400152279 /* UIViewXRadialGradient.swift */,
+				39159800228D689600152279 /* UIVisualEffectViewX.swift */,
+				391597EE228D689400152279 /* UIWindow+Extension.swift */,
+				391597F5228D689500152279 /* ViewBase.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,13 +365,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39159809228D689600152279 /* UIViewAnchorPoint.swift in Sources */,
+				39159805228D689600152279 /* UITextFieldX.swift in Sources */,
 				3904C79D2282DCD400D3D057 /* PreviewImageController.swift in Sources */,
+				3915980F228D689600152279 /* UIColor+Extension.swift in Sources */,
+				3915980B228D689600152279 /* ViewBase.swift in Sources */,
 				3904C79F2282DCD400D3D057 /* CameraManager.swift in Sources */,
+				39159813228D689600152279 /* String+Extension.swift in Sources */,
+				39159815228D689600152279 /* Date-Helper.swift in Sources */,
 				3904C79E2282DCD400D3D057 /* TakePhotoManager.swift in Sources */,
 				3904C7672282DC9000D3D057 /* ViewController.swift in Sources */,
+				39159807228D689600152279 /* UISliderX.swift in Sources */,
+				39159804228D689600152279 /* UIWindow+Extension.swift in Sources */,
+				3915980D228D689600152279 /* BadgeButton+Extension.swift in Sources */,
 				3904C79B2282DCD400D3D057 /* CropImageViewController.swift in Sources */,
+				3915980A228D689600152279 /* UIStoryboard+Extension.swift in Sources */,
+				39159808228D689600152279 /* UIViewX.swift in Sources */,
+				39159814228D689600152279 /* UIImageViewX.swift in Sources */,
+				39159806228D689600152279 /* UIScreen+Extension.swift in Sources */,
+				39159811228D689600152279 /* UIViewControllerX.swift in Sources */,
 				3904C7652282DC9000D3D057 /* AppDelegate.swift in Sources */,
 				3904C79C2282DCD400D3D057 /* UIImage+Extension.swift in Sources */,
+				39159802228D689600152279 /* UIBarButtonItem+Extension.swift in Sources */,
+				3915980E228D689600152279 /* UIButtonX.swift in Sources */,
+				39159803228D689600152279 /* UIViewXRadialGradient.swift in Sources */,
+				3915980C228D689600152279 /* UINavigation+Extension.swift in Sources */,
+				39159816228D689600152279 /* UIVisualEffectViewX.swift in Sources */,
+				39159810228D689600152279 /* UITextViewX.swift in Sources */,
+				39159812228D689600152279 /* Double+Extension.swift in Sources */,
+				39159801228D689600152279 /* UILabelX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
