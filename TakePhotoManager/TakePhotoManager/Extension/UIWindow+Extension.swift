@@ -57,6 +57,8 @@ extension UIWindow {
         }
         return base
     }
+    
+    
 }
 
 
@@ -65,6 +67,21 @@ extension UIApplication {
         if responds(to: Selector(("statusBar"))) {
             return value(forKey: "statusBar") as? UIView
         }
+        return nil
+    }
+    
+    var topSafeAreaConStraint: CGFloat? {
+        if let window = UIApplication.shared.keyWindow {
+            var top: CGFloat = 0.0
+            if #available(iOS 11.0, *) {
+                top = window.safeAreaInsets.top
+            } else {
+                top = 20
+            }
+            
+            return top + 44
+        }
+        
         return nil
     }
 }

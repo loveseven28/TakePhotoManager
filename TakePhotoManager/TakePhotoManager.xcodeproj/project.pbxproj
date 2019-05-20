@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32389735D049B8015C05B084 /* Pods_TakePhotoManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB4176D71C66B7808BD508E /* Pods_TakePhotoManager.framework */; };
 		3904B2D62292960C004236F2 /* TagItemLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2CF2292960C004236F2 /* TagItemLayout.swift */; };
 		3904B2D72292960C004236F2 /* HashTagListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2D02292960C004236F2 /* HashTagListViewController.swift */; };
 		3904B2D82292960C004236F2 /* TagViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3904B2D12292960C004236F2 /* TagViewCell.xib */; };
@@ -15,6 +16,24 @@
 		3904B2DB2292960C004236F2 /* TagViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2D42292960C004236F2 /* TagViewCell.swift */; };
 		3904B2DC2292960C004236F2 /* TagView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3904B2D52292960C004236F2 /* TagView.xib */; };
 		3904B2DE22929A4E004236F2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2DD22929A4E004236F2 /* MainViewController.swift */; };
+		3904B2E32292A37B004236F2 /* FeedCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2DF2292A37B004236F2 /* FeedCollectionViewLayout.swift */; };
+		3904B2E42292A37B004236F2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2E02292A37B004236F2 /* BaseViewController.swift */; };
+		3904B2E52292A37B004236F2 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2E12292A37B004236F2 /* BaseTableViewCell.swift */; };
+		3904B2E62292A37B004236F2 /* BaseCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2E22292A37B004236F2 /* BaseCollectionView.swift */; };
+		3904B2F02292A6B2004236F2 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2EA2292A6B2004236F2 /* AppColor.swift */; };
+		3904B2F12292A6B2004236F2 /* LoadingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2EB2292A6B2004236F2 /* LoadingHelper.swift */; };
+		3904B2F22292A6B2004236F2 /* AppKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2EC2292A6B2004236F2 /* AppKey.swift */; };
+		3904B2F32292A6B2004236F2 /* SettingsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2ED2292A6B2004236F2 /* SettingsApp.swift */; };
+		3904B2F42292A6B2004236F2 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2EE2292A6B2004236F2 /* AppFont.swift */; };
+		3904B2FD2292A797004236F2 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3904B2F62292A796004236F2 /* MenuTableViewCell.xib */; };
+		3904B2FE2292A797004236F2 /* MenuHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2F72292A796004236F2 /* MenuHelper.swift */; };
+		3904B2FF2292A797004236F2 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2F82292A796004236F2 /* MenuTableViewCell.swift */; };
+		3904B3002292A797004236F2 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3904B2F92292A796004236F2 /* MenuViewController.xib */; };
+		3904B3012292A797004236F2 /* DismissMenuAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2FA2292A796004236F2 /* DismissMenuAnimator.swift */; };
+		3904B3022292A797004236F2 /* PresentMenuAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2FB2292A796004236F2 /* PresentMenuAnimator.swift */; };
+		3904B3032292A797004236F2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2FC2292A796004236F2 /* MenuViewController.swift */; };
+		3904B3072292A876004236F2 /* MyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B3052292A876004236F2 /* MyImageView.swift */; };
+		3904B3082292A876004236F2 /* MyImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3904B3062292A876004236F2 /* MyImageView.xib */; };
 		3904C7652282DC9000D3D057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904C7642282DC9000D3D057 /* AppDelegate.swift */; };
 		3904C7672282DC9000D3D057 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904C7662282DC9000D3D057 /* ViewController.swift */; };
 		3904C76A2282DC9000D3D057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3904C7682282DC9000D3D057 /* Main.storyboard */; };
@@ -72,6 +91,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		182E7BC2DD1BBC8812B4FC43 /* Pods-TakePhotoManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakePhotoManager.debug.xcconfig"; path = "Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager.debug.xcconfig"; sourceTree = "<group>"; };
 		3904B2CF2292960C004236F2 /* TagItemLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagItemLayout.swift; sourceTree = "<group>"; };
 		3904B2D02292960C004236F2 /* HashTagListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashTagListViewController.swift; sourceTree = "<group>"; };
 		3904B2D12292960C004236F2 /* TagViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagViewCell.xib; sourceTree = "<group>"; };
@@ -80,6 +100,24 @@
 		3904B2D42292960C004236F2 /* TagViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagViewCell.swift; sourceTree = "<group>"; };
 		3904B2D52292960C004236F2 /* TagView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagView.xib; sourceTree = "<group>"; };
 		3904B2DD22929A4E004236F2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3904B2DF2292A37B004236F2 /* FeedCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCollectionViewLayout.swift; sourceTree = "<group>"; };
+		3904B2E02292A37B004236F2 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3904B2E12292A37B004236F2 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		3904B2E22292A37B004236F2 /* BaseCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionView.swift; sourceTree = "<group>"; };
+		3904B2EA2292A6B2004236F2 /* AppColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		3904B2EB2292A6B2004236F2 /* LoadingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingHelper.swift; sourceTree = "<group>"; };
+		3904B2EC2292A6B2004236F2 /* AppKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppKey.swift; sourceTree = "<group>"; };
+		3904B2ED2292A6B2004236F2 /* SettingsApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsApp.swift; sourceTree = "<group>"; };
+		3904B2EE2292A6B2004236F2 /* AppFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		3904B2F62292A796004236F2 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		3904B2F72292A796004236F2 /* MenuHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuHelper.swift; sourceTree = "<group>"; };
+		3904B2F82292A796004236F2 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		3904B2F92292A796004236F2 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		3904B2FA2292A796004236F2 /* DismissMenuAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissMenuAnimator.swift; sourceTree = "<group>"; };
+		3904B2FB2292A796004236F2 /* PresentMenuAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentMenuAnimator.swift; sourceTree = "<group>"; };
+		3904B2FC2292A796004236F2 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		3904B3052292A876004236F2 /* MyImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyImageView.swift; sourceTree = "<group>"; };
+		3904B3062292A876004236F2 /* MyImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyImageView.xib; sourceTree = "<group>"; };
 		3904C7612282DC9000D3D057 /* TakePhotoManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakePhotoManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3904C7642282DC9000D3D057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3904C7662282DC9000D3D057 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +161,8 @@
 		391597FE228D689600152279 /* UIImageViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewX.swift; sourceTree = "<group>"; };
 		391597FF228D689600152279 /* Date-Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date-Helper.swift"; sourceTree = "<group>"; };
 		39159800228D689600152279 /* UIVisualEffectViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVisualEffectViewX.swift; sourceTree = "<group>"; };
+		DD07B9C6A24BF4D645753B3D /* Pods-TakePhotoManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakePhotoManager.release.xcconfig"; path = "Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager.release.xcconfig"; sourceTree = "<group>"; };
+		EEB4176D71C66B7808BD508E /* Pods_TakePhotoManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakePhotoManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32389735D049B8015C05B084 /* Pods_TakePhotoManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +205,90 @@
 			path = HashTagView;
 			sourceTree = "<group>";
 		};
+		3904B2E72292A381004236F2 /* BASE */ = {
+			isa = PBXGroup;
+			children = (
+				3904B2E22292A37B004236F2 /* BaseCollectionView.swift */,
+				3904B2E12292A37B004236F2 /* BaseTableViewCell.swift */,
+				3904B2E02292A37B004236F2 /* BaseViewController.swift */,
+				3904B2DF2292A37B004236F2 /* FeedCollectionViewLayout.swift */,
+			);
+			path = BASE;
+			sourceTree = "<group>";
+		};
+		3904B2E82292A6B2004236F2 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				3904B2EA2292A6B2004236F2 /* AppColor.swift */,
+				3904B2EB2292A6B2004236F2 /* LoadingHelper.swift */,
+				3904B2EC2292A6B2004236F2 /* AppKey.swift */,
+				3904B2ED2292A6B2004236F2 /* SettingsApp.swift */,
+				3904B2EE2292A6B2004236F2 /* AppFont.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		3904B2F52292A796004236F2 /* MenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3904B2F62292A796004236F2 /* MenuTableViewCell.xib */,
+				3904B2F72292A796004236F2 /* MenuHelper.swift */,
+				3904B2F82292A796004236F2 /* MenuTableViewCell.swift */,
+				3904B2F92292A796004236F2 /* MenuViewController.xib */,
+				3904B2FA2292A796004236F2 /* DismissMenuAnimator.swift */,
+				3904B2FB2292A796004236F2 /* PresentMenuAnimator.swift */,
+				3904B2FC2292A796004236F2 /* MenuViewController.swift */,
+			);
+			path = MenuViewController;
+			sourceTree = "<group>";
+		};
+		3904B3042292A876004236F2 /* MyImageView */ = {
+			isa = PBXGroup;
+			children = (
+				3904B3052292A876004236F2 /* MyImageView.swift */,
+				3904B3062292A876004236F2 /* MyImageView.xib */,
+			);
+			path = MyImageView;
+			sourceTree = "<group>";
+		};
+		3904B30B2292A9A9004236F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3904B2CE2292960C004236F2 /* HashTagView */,
+				3904B3042292A876004236F2 /* MyImageView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3904B30C2292A9BC004236F2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3904B2F52292A796004236F2 /* MenuViewController */,
+				3904C7662282DC9000D3D057 /* ViewController.swift */,
+				3904B2DD22929A4E004236F2 /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3904B30D2292AAB2004236F2 /* SupportFile */ = {
+			isa = PBXGroup;
+			children = (
+				3904C7642282DC9000D3D057 /* AppDelegate.swift */,
+				3904C76B2282DC9300D3D057 /* Assets.xcassets */,
+				3904C76D2282DC9300D3D057 /* LaunchScreen.storyboard */,
+				3904C7702282DC9300D3D057 /* Info.plist */,
+			);
+			path = SupportFile;
+			sourceTree = "<group>";
+		};
+		3904B30E2292B23A004236F2 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3904C7682282DC9000D3D057 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		3904C7582282DC9000D3D057 = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +296,8 @@
 				3904C7782282DC9300D3D057 /* TakePhotoManagerTests */,
 				3904C7832282DC9300D3D057 /* TakePhotoManagerUITests */,
 				3904C7622282DC9000D3D057 /* Products */,
+				EBE7B8369541BFFE506B5A85 /* Pods */,
+				51AAEB1167C8143A437173D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,16 +314,13 @@
 		3904C7632282DC9000D3D057 /* TakePhotoManager */ = {
 			isa = PBXGroup;
 			children = (
-				3904B2CE2292960C004236F2 /* HashTagView */,
+				3904B30E2292B23A004236F2 /* Storyboard */,
+				3904B30C2292A9BC004236F2 /* ViewController */,
+				3904B30B2292A9A9004236F2 /* View */,
+				3904B2E82292A6B2004236F2 /* Constant */,
+				3904B2E72292A381004236F2 /* BASE */,
 				391597EA228D687C00152279 /* Extension */,
-				3904C7922282DCD400D3D057 /* ManagerImage */,
-				3904C7642282DC9000D3D057 /* AppDelegate.swift */,
-				3904C7662282DC9000D3D057 /* ViewController.swift */,
-				3904B2DD22929A4E004236F2 /* MainViewController.swift */,
-				3904C7682282DC9000D3D057 /* Main.storyboard */,
-				3904C76B2282DC9300D3D057 /* Assets.xcassets */,
-				3904C76D2282DC9300D3D057 /* LaunchScreen.storyboard */,
-				3904C7702282DC9300D3D057 /* Info.plist */,
+				3904B30D2292AAB2004236F2 /* SupportFile */,
 			);
 			path = TakePhotoManager;
 			sourceTree = "<group>";
@@ -237,6 +361,7 @@
 		391597EA228D687C00152279 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				3904C7922282DCD400D3D057 /* ManagerImage */,
 				391597F7228D689500152279 /* BadgeButton+Extension.swift */,
 				391597FF228D689600152279 /* Date-Helper.swift */,
 				391597FC228D689500152279 /* Double+Extension.swift */,
@@ -263,6 +388,23 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		51AAEB1167C8143A437173D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEB4176D71C66B7808BD508E /* Pods_TakePhotoManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBE7B8369541BFFE506B5A85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				182E7BC2DD1BBC8812B4FC43 /* Pods-TakePhotoManager.debug.xcconfig */,
+				DD07B9C6A24BF4D645753B3D /* Pods-TakePhotoManager.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -270,9 +412,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3904C7892282DC9300D3D057 /* Build configuration list for PBXNativeTarget "TakePhotoManager" */;
 			buildPhases = (
+				06414C2B8A072C1F730A73EB /* [CP] Check Pods Manifest.lock */,
 				3904C75D2282DC9000D3D057 /* Sources */,
 				3904C75E2282DC9000D3D057 /* Frameworks */,
 				3904C75F2282DC9000D3D057 /* Resources */,
+				62E71A2E3A2D243AC20E0F3C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -371,10 +515,13 @@
 				3904B2DA2292960C004236F2 /* HashTagListViewController.xib in Resources */,
 				3904C76F2282DC9300D3D057 /* LaunchScreen.storyboard in Resources */,
 				3904C7A22282DCD400D3D057 /* PreviewImageController.xib in Resources */,
+				3904B3082292A876004236F2 /* MyImageView.xib in Resources */,
 				3904B2DC2292960C004236F2 /* TagView.xib in Resources */,
 				3904C76C2282DC9300D3D057 /* Assets.xcassets in Resources */,
 				3904C76A2282DC9000D3D057 /* Main.storyboard in Resources */,
+				3904B3002292A797004236F2 /* MenuViewController.xib in Resources */,
 				3904C7A02282DCD400D3D057 /* TakePhotoManager.xib in Resources */,
+				3904B2FD2292A797004236F2 /* MenuTableViewCell.xib in Resources */,
 				3904B2D82292960C004236F2 /* TagViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,23 +542,93 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06414C2B8A072C1F730A73EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TakePhotoManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62E71A2E3A2D243AC20E0F3C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Whisper/Whisper.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Whisper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3904C75D2282DC9000D3D057 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				39159809228D689600152279 /* UIViewAnchorPoint.swift in Sources */,
+				3904B2F02292A6B2004236F2 /* AppColor.swift in Sources */,
 				39159805228D689600152279 /* UITextFieldX.swift in Sources */,
 				3904C79D2282DCD400D3D057 /* PreviewImageController.swift in Sources */,
+				3904B2F42292A6B2004236F2 /* AppFont.swift in Sources */,
 				3915980F228D689600152279 /* UIColor+Extension.swift in Sources */,
 				3915980B228D689600152279 /* ViewBase.swift in Sources */,
+				3904B3032292A797004236F2 /* MenuViewController.swift in Sources */,
+				3904B3072292A876004236F2 /* MyImageView.swift in Sources */,
+				3904B2E62292A37B004236F2 /* BaseCollectionView.swift in Sources */,
+				3904B2E42292A37B004236F2 /* BaseViewController.swift in Sources */,
 				3904C79F2282DCD400D3D057 /* CameraManager.swift in Sources */,
 				39159813228D689600152279 /* String+Extension.swift in Sources */,
 				3904B2DE22929A4E004236F2 /* MainViewController.swift in Sources */,
 				3904B2D62292960C004236F2 /* TagItemLayout.swift in Sources */,
 				39159815228D689600152279 /* Date-Helper.swift in Sources */,
+				3904B2FF2292A797004236F2 /* MenuTableViewCell.swift in Sources */,
+				3904B2F32292A6B2004236F2 /* SettingsApp.swift in Sources */,
 				3904C79E2282DCD400D3D057 /* TakePhotoManager.swift in Sources */,
 				3904B2DB2292960C004236F2 /* TagViewCell.swift in Sources */,
+				3904B2F12292A6B2004236F2 /* LoadingHelper.swift in Sources */,
 				3904C7672282DC9000D3D057 /* ViewController.swift in Sources */,
 				39159807228D689600152279 /* UISliderX.swift in Sources */,
 				39159804228D689600152279 /* UIWindow+Extension.swift in Sources */,
@@ -421,6 +638,8 @@
 				39159808228D689600152279 /* UIViewX.swift in Sources */,
 				3904B2D72292960C004236F2 /* HashTagListViewController.swift in Sources */,
 				39159814228D689600152279 /* UIImageViewX.swift in Sources */,
+				3904B2E52292A37B004236F2 /* BaseTableViewCell.swift in Sources */,
+				3904B3022292A797004236F2 /* PresentMenuAnimator.swift in Sources */,
 				39159806228D689600152279 /* UIScreen+Extension.swift in Sources */,
 				39159811228D689600152279 /* UIViewControllerX.swift in Sources */,
 				3904C7652282DC9000D3D057 /* AppDelegate.swift in Sources */,
@@ -430,9 +649,13 @@
 				39159803228D689600152279 /* UIViewXRadialGradient.swift in Sources */,
 				3915980C228D689600152279 /* UINavigation+Extension.swift in Sources */,
 				39159816228D689600152279 /* UIVisualEffectViewX.swift in Sources */,
+				3904B2E32292A37B004236F2 /* FeedCollectionViewLayout.swift in Sources */,
+				3904B2F22292A6B2004236F2 /* AppKey.swift in Sources */,
 				39159810228D689600152279 /* UITextViewX.swift in Sources */,
+				3904B2FE2292A797004236F2 /* MenuHelper.swift in Sources */,
 				39159812228D689600152279 /* Double+Extension.swift in Sources */,
 				39159801228D689600152279 /* UILabelX.swift in Sources */,
+				3904B3012292A797004236F2 /* DismissMenuAnimator.swift in Sources */,
 				3904B2D92292960C004236F2 /* TagView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,10 +829,12 @@
 		};
 		3904C78A2282DC9300D3D057 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 182E7BC2DD1BBC8812B4FC43 /* Pods-TakePhotoManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TakePhotoManager/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/TakePhotoManager/SupportFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -623,10 +848,12 @@
 		};
 		3904C78B2282DC9300D3D057 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD07B9C6A24BF4D645753B3D /* Pods-TakePhotoManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TakePhotoManager/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/TakePhotoManager/SupportFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
