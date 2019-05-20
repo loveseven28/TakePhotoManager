@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3904B2D62292960C004236F2 /* TagItemLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2CF2292960C004236F2 /* TagItemLayout.swift */; };
+		3904B2D72292960C004236F2 /* HashTagListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2D02292960C004236F2 /* HashTagListViewController.swift */; };
+		3904B2D82292960C004236F2 /* TagViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3904B2D12292960C004236F2 /* TagViewCell.xib */; };
+		3904B2D92292960C004236F2 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2D22292960C004236F2 /* TagView.swift */; };
+		3904B2DA2292960C004236F2 /* HashTagListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3904B2D32292960C004236F2 /* HashTagListViewController.xib */; };
+		3904B2DB2292960C004236F2 /* TagViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2D42292960C004236F2 /* TagViewCell.swift */; };
+		3904B2DC2292960C004236F2 /* TagView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3904B2D52292960C004236F2 /* TagView.xib */; };
+		3904B2DE22929A4E004236F2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2DD22929A4E004236F2 /* MainViewController.swift */; };
 		3904C7652282DC9000D3D057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904C7642282DC9000D3D057 /* AppDelegate.swift */; };
 		3904C7672282DC9000D3D057 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904C7662282DC9000D3D057 /* ViewController.swift */; };
 		3904C76A2282DC9000D3D057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3904C7682282DC9000D3D057 /* Main.storyboard */; };
@@ -64,6 +72,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3904B2CF2292960C004236F2 /* TagItemLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagItemLayout.swift; sourceTree = "<group>"; };
+		3904B2D02292960C004236F2 /* HashTagListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashTagListViewController.swift; sourceTree = "<group>"; };
+		3904B2D12292960C004236F2 /* TagViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagViewCell.xib; sourceTree = "<group>"; };
+		3904B2D22292960C004236F2 /* TagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		3904B2D32292960C004236F2 /* HashTagListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HashTagListViewController.xib; sourceTree = "<group>"; };
+		3904B2D42292960C004236F2 /* TagViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagViewCell.swift; sourceTree = "<group>"; };
+		3904B2D52292960C004236F2 /* TagView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagView.xib; sourceTree = "<group>"; };
+		3904B2DD22929A4E004236F2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3904C7612282DC9000D3D057 /* TakePhotoManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakePhotoManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3904C7642282DC9000D3D057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3904C7662282DC9000D3D057 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +150,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3904B2CE2292960C004236F2 /* HashTagView */ = {
+			isa = PBXGroup;
+			children = (
+				3904B2CF2292960C004236F2 /* TagItemLayout.swift */,
+				3904B2D02292960C004236F2 /* HashTagListViewController.swift */,
+				3904B2D32292960C004236F2 /* HashTagListViewController.xib */,
+				3904B2D42292960C004236F2 /* TagViewCell.swift */,
+				3904B2D12292960C004236F2 /* TagViewCell.xib */,
+				3904B2D22292960C004236F2 /* TagView.swift */,
+				3904B2D52292960C004236F2 /* TagView.xib */,
+			);
+			path = HashTagView;
+			sourceTree = "<group>";
+		};
 		3904C7582282DC9000D3D057 = {
 			isa = PBXGroup;
 			children = (
@@ -157,10 +187,12 @@
 		3904C7632282DC9000D3D057 /* TakePhotoManager */ = {
 			isa = PBXGroup;
 			children = (
+				3904B2CE2292960C004236F2 /* HashTagView */,
 				391597EA228D687C00152279 /* Extension */,
 				3904C7922282DCD400D3D057 /* ManagerImage */,
 				3904C7642282DC9000D3D057 /* AppDelegate.swift */,
 				3904C7662282DC9000D3D057 /* ViewController.swift */,
+				3904B2DD22929A4E004236F2 /* MainViewController.swift */,
 				3904C7682282DC9000D3D057 /* Main.storyboard */,
 				3904C76B2282DC9300D3D057 /* Assets.xcassets */,
 				3904C76D2282DC9300D3D057 /* LaunchScreen.storyboard */,
@@ -336,11 +368,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3904C7A12282DCD400D3D057 /* CropImageViewController.xib in Resources */,
+				3904B2DA2292960C004236F2 /* HashTagListViewController.xib in Resources */,
 				3904C76F2282DC9300D3D057 /* LaunchScreen.storyboard in Resources */,
 				3904C7A22282DCD400D3D057 /* PreviewImageController.xib in Resources */,
+				3904B2DC2292960C004236F2 /* TagView.xib in Resources */,
 				3904C76C2282DC9300D3D057 /* Assets.xcassets in Resources */,
 				3904C76A2282DC9000D3D057 /* Main.storyboard in Resources */,
 				3904C7A02282DCD400D3D057 /* TakePhotoManager.xib in Resources */,
+				3904B2D82292960C004236F2 /* TagViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,8 +407,11 @@
 				3915980B228D689600152279 /* ViewBase.swift in Sources */,
 				3904C79F2282DCD400D3D057 /* CameraManager.swift in Sources */,
 				39159813228D689600152279 /* String+Extension.swift in Sources */,
+				3904B2DE22929A4E004236F2 /* MainViewController.swift in Sources */,
+				3904B2D62292960C004236F2 /* TagItemLayout.swift in Sources */,
 				39159815228D689600152279 /* Date-Helper.swift in Sources */,
 				3904C79E2282DCD400D3D057 /* TakePhotoManager.swift in Sources */,
+				3904B2DB2292960C004236F2 /* TagViewCell.swift in Sources */,
 				3904C7672282DC9000D3D057 /* ViewController.swift in Sources */,
 				39159807228D689600152279 /* UISliderX.swift in Sources */,
 				39159804228D689600152279 /* UIWindow+Extension.swift in Sources */,
@@ -381,6 +419,7 @@
 				3904C79B2282DCD400D3D057 /* CropImageViewController.swift in Sources */,
 				3915980A228D689600152279 /* UIStoryboard+Extension.swift in Sources */,
 				39159808228D689600152279 /* UIViewX.swift in Sources */,
+				3904B2D72292960C004236F2 /* HashTagListViewController.swift in Sources */,
 				39159814228D689600152279 /* UIImageViewX.swift in Sources */,
 				39159806228D689600152279 /* UIScreen+Extension.swift in Sources */,
 				39159811228D689600152279 /* UIViewControllerX.swift in Sources */,
@@ -394,6 +433,7 @@
 				39159810228D689600152279 /* UITextViewX.swift in Sources */,
 				39159812228D689600152279 /* Double+Extension.swift in Sources */,
 				39159801228D689600152279 /* UILabelX.swift in Sources */,
+				3904B2D92292960C004236F2 /* TagView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

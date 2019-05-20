@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DQb-Lk-ba0">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,35 +10,112 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TakePhotoManager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="TakePhotoManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWY-jb-44c">
-                                <rect key="frame" x="157" y="799" width="100" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEc-Nj-8IP">
+                                <rect key="frame" x="0.0" y="88" width="414" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="sf9-RY-Fhd"/>
+                                    <constraint firstAttribute="height" constant="40" id="hKx-Bj-TbB"/>
                                 </constraints>
-                                <state key="normal" title="Take photo"/>
+                                <state key="normal" title="Camera Manager">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Pzf-W5-OHe" kind="push" id="EZA-A0-XCT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVm-Fv-NlK">
+                                <rect key="frame" x="0.0" y="136" width="414" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="115-fT-waN"/>
+                                </constraints>
+                                <state key="normal" title="Hash Tag View">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IWY-jb-44c" secondAttribute="bottom" constant="33" id="6xs-J8-JZm"/>
-                            <constraint firstItem="IWY-jb-44c" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hOo-rV-Aja"/>
+                            <constraint firstItem="cVm-Fv-NlK" firstAttribute="top" secondItem="HEc-Nj-8IP" secondAttribute="bottom" constant="8" id="1me-Cp-N1p"/>
+                            <constraint firstItem="HEc-Nj-8IP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="E90-eQ-hUc"/>
+                            <constraint firstItem="HEc-Nj-8IP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HwL-Au-057"/>
+                            <constraint firstItem="cVm-Fv-NlK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WUL-Sb-dFy"/>
+                            <constraint firstItem="HEc-Nj-8IP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jBC-Ds-VeC"/>
+                            <constraint firstItem="cVm-Fv-NlK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uNF-qi-RuD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="takePhotoButton" destination="IWY-jb-44c" id="oW7-Sd-ecW"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="Main" id="for-nw-Qhp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="89.732142857142847"/>
+        </scene>
+        <!--Camera Manager-->
+        <scene sceneID="9Lx-ql-mJv">
+            <objects>
+                <viewController id="Pzf-W5-OHe" customClass="ViewController" customModule="TakePhotoManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SI7-vl-KUp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWY-jb-44c" customClass="UIButtonX" customModule="TakePhotoManager" customModuleProvider="target">
+                                <rect key="frame" x="157" y="802" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="sf9-RY-Fhd"/>
+                                </constraints>
+                                <state key="normal" title="Take photo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IWY-jb-44c" firstAttribute="centerX" secondItem="JDE-23-KWk" secondAttribute="centerX" id="Kj9-uC-TLq"/>
+                            <constraint firstItem="JDE-23-KWk" firstAttribute="bottom" secondItem="IWY-jb-44c" secondAttribute="bottom" constant="30" id="i4W-J5-Lai"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JDE-23-KWk"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Camera Manager" id="ZPp-Pw-mpG"/>
+                    <connections>
+                        <outlet property="takePhotoButton" destination="IWY-jb-44c" id="QYq-ua-5Oe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="scw-4S-p2B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1765.217391304348" y="90.401785714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ufX-E9-Xb5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DQb-Lk-ba0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SfT-ox-Nm8">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nUB-oB-2Qf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gie-4d-UVu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="463.768115942029" y="-583.25892857142856"/>
         </scene>
     </scenes>
 </document>
