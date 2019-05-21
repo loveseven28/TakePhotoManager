@@ -71,6 +71,16 @@
 		39159814228D689600152279 /* UIImageViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597FE228D689600152279 /* UIImageViewX.swift */; };
 		39159815228D689600152279 /* Date-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597FF228D689600152279 /* Date-Helper.swift */; };
 		39159816228D689600152279 /* UIVisualEffectViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39159800228D689600152279 /* UIVisualEffectViewX.swift */; };
+		39320FFF2293944400C09DE0 /* NotiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39320FFB2293944400C09DE0 /* NotiRouter.swift */; };
+		393210002293944400C09DE0 /* SwiftDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39320FFC2293944400C09DE0 /* SwiftDecoder.swift */; };
+		393210012293944400C09DE0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39320FFD2293944400C09DE0 /* NetworkManager.swift */; };
+		393210022293944400C09DE0 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39320FFE2293944400C09DE0 /* BaseAPI.swift */; };
+		393210052293952E00C09DE0 /* NotiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393210042293952D00C09DE0 /* NotiModel.swift */; };
+		393210072293955000C09DE0 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393210062293955000C09DE0 /* DataModel.swift */; };
+		3932100D2293992F00C09DE0 /* MyAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393210092293992F00C09DE0 /* MyAlertController.swift */; };
+		3932100E2293992F00C09DE0 /* LimoAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3932100A2293992F00C09DE0 /* LimoAlertView.swift */; };
+		3932100F2293992F00C09DE0 /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3932100B2293992F00C09DE0 /* SCLAlertView.swift */; };
+		393210102293992F00C09DE0 /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3932100C2293992F00C09DE0 /* SCLExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +171,16 @@
 		391597FE228D689600152279 /* UIImageViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewX.swift; sourceTree = "<group>"; };
 		391597FF228D689600152279 /* Date-Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date-Helper.swift"; sourceTree = "<group>"; };
 		39159800228D689600152279 /* UIVisualEffectViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVisualEffectViewX.swift; sourceTree = "<group>"; };
+		39320FFB2293944400C09DE0 /* NotiRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotiRouter.swift; sourceTree = "<group>"; };
+		39320FFC2293944400C09DE0 /* SwiftDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDecoder.swift; sourceTree = "<group>"; };
+		39320FFD2293944400C09DE0 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		39320FFE2293944400C09DE0 /* BaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		393210042293952D00C09DE0 /* NotiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotiModel.swift; sourceTree = "<group>"; };
+		393210062293955000C09DE0 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		393210092293992F00C09DE0 /* MyAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAlertController.swift; sourceTree = "<group>"; };
+		3932100A2293992F00C09DE0 /* LimoAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimoAlertView.swift; sourceTree = "<group>"; };
+		3932100B2293992F00C09DE0 /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
+		3932100C2293992F00C09DE0 /* SCLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLExtensions.swift; sourceTree = "<group>"; };
 		DD07B9C6A24BF4D645753B3D /* Pods-TakePhotoManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakePhotoManager.release.xcconfig"; path = "Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager.release.xcconfig"; sourceTree = "<group>"; };
 		EEB4176D71C66B7808BD508E /* Pods_TakePhotoManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakePhotoManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -254,6 +274,7 @@
 		3904B30B2292A9A9004236F2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				393210082293992F00C09DE0 /* AlertCustomView */,
 				3904B2CE2292960C004236F2 /* HashTagView */,
 				3904B3042292A876004236F2 /* MyImageView */,
 			);
@@ -314,6 +335,8 @@
 		3904C7632282DC9000D3D057 /* TakePhotoManager */ = {
 			isa = PBXGroup;
 			children = (
+				39320FFA2293941400C09DE0 /* NetworkManager */,
+				393210032293950F00C09DE0 /* Model */,
 				3904B30E2292B23A004236F2 /* Storyboard */,
 				3904B30C2292A9BC004236F2 /* ViewController */,
 				3904B30B2292A9A9004236F2 /* View */,
@@ -386,6 +409,37 @@
 				391597F5228D689500152279 /* ViewBase.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		39320FFA2293941400C09DE0 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				39320FFE2293944400C09DE0 /* BaseAPI.swift */,
+				39320FFD2293944400C09DE0 /* NetworkManager.swift */,
+				39320FFB2293944400C09DE0 /* NotiRouter.swift */,
+				39320FFC2293944400C09DE0 /* SwiftDecoder.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		393210032293950F00C09DE0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				393210062293955000C09DE0 /* DataModel.swift */,
+				393210042293952D00C09DE0 /* NotiModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		393210082293992F00C09DE0 /* AlertCustomView */ = {
+			isa = PBXGroup;
+			children = (
+				393210092293992F00C09DE0 /* MyAlertController.swift */,
+				3932100A2293992F00C09DE0 /* LimoAlertView.swift */,
+				3932100B2293992F00C09DE0 /* SCLAlertView.swift */,
+				3932100C2293992F00C09DE0 /* SCLExtensions.swift */,
+			);
+			path = AlertCustomView;
 			sourceTree = "<group>";
 		};
 		51AAEB1167C8143A437173D5 /* Frameworks */ = {
@@ -574,6 +628,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
@@ -587,6 +642,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
@@ -613,7 +669,10 @@
 				39159805228D689600152279 /* UITextFieldX.swift in Sources */,
 				3904C79D2282DCD400D3D057 /* PreviewImageController.swift in Sources */,
 				3904B2F42292A6B2004236F2 /* AppFont.swift in Sources */,
+				393210022293944400C09DE0 /* BaseAPI.swift in Sources */,
+				393210102293992F00C09DE0 /* SCLExtensions.swift in Sources */,
 				3915980F228D689600152279 /* UIColor+Extension.swift in Sources */,
+				393210052293952E00C09DE0 /* NotiModel.swift in Sources */,
 				3915980B228D689600152279 /* ViewBase.swift in Sources */,
 				3904B3032292A797004236F2 /* MenuViewController.swift in Sources */,
 				3904B3072292A876004236F2 /* MyImageView.swift in Sources */,
@@ -624,7 +683,9 @@
 				3904B2DE22929A4E004236F2 /* MainViewController.swift in Sources */,
 				3904B2D62292960C004236F2 /* TagItemLayout.swift in Sources */,
 				39159815228D689600152279 /* Date-Helper.swift in Sources */,
+				393210012293944400C09DE0 /* NetworkManager.swift in Sources */,
 				3904B2FF2292A797004236F2 /* MenuTableViewCell.swift in Sources */,
+				3932100D2293992F00C09DE0 /* MyAlertController.swift in Sources */,
 				3904B2F32292A6B2004236F2 /* SettingsApp.swift in Sources */,
 				3904C79E2282DCD400D3D057 /* TakePhotoManager.swift in Sources */,
 				3904B2DB2292960C004236F2 /* TagViewCell.swift in Sources */,
@@ -632,13 +693,17 @@
 				3904C7672282DC9000D3D057 /* ViewController.swift in Sources */,
 				39159807228D689600152279 /* UISliderX.swift in Sources */,
 				39159804228D689600152279 /* UIWindow+Extension.swift in Sources */,
+				3932100F2293992F00C09DE0 /* SCLAlertView.swift in Sources */,
 				3915980D228D689600152279 /* BadgeButton+Extension.swift in Sources */,
+				3932100E2293992F00C09DE0 /* LimoAlertView.swift in Sources */,
 				3904C79B2282DCD400D3D057 /* CropImageViewController.swift in Sources */,
 				3915980A228D689600152279 /* UIStoryboard+Extension.swift in Sources */,
+				393210002293944400C09DE0 /* SwiftDecoder.swift in Sources */,
 				39159808228D689600152279 /* UIViewX.swift in Sources */,
 				3904B2D72292960C004236F2 /* HashTagListViewController.swift in Sources */,
 				39159814228D689600152279 /* UIImageViewX.swift in Sources */,
 				3904B2E52292A37B004236F2 /* BaseTableViewCell.swift in Sources */,
+				393210072293955000C09DE0 /* DataModel.swift in Sources */,
 				3904B3022292A797004236F2 /* PresentMenuAnimator.swift in Sources */,
 				39159806228D689600152279 /* UIScreen+Extension.swift in Sources */,
 				39159811228D689600152279 /* UIViewControllerX.swift in Sources */,
@@ -654,6 +719,7 @@
 				39159810228D689600152279 /* UITextViewX.swift in Sources */,
 				3904B2FE2292A797004236F2 /* MenuHelper.swift in Sources */,
 				39159812228D689600152279 /* Double+Extension.swift in Sources */,
+				39320FFF2293944400C09DE0 /* NotiRouter.swift in Sources */,
 				39159801228D689600152279 /* UILabelX.swift in Sources */,
 				3904B3012292A797004236F2 /* DismissMenuAnimator.swift in Sources */,
 				3904B2D92292960C004236F2 /* TagView.swift in Sources */,
@@ -833,7 +899,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5TP8PA3939;
 				INFOPLIST_FILE = "$(SRCROOT)/TakePhotoManager/SupportFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -852,7 +918,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5TP8PA3939;
 				INFOPLIST_FILE = "$(SRCROOT)/TakePhotoManager/SupportFile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
