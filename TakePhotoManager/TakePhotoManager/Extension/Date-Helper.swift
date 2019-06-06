@@ -37,6 +37,15 @@ extension Date {
         return self.stringWithFormat(format: "hh:mm")
     }
     
+    func toString() -> String {
+        
+        let calendar = Calendar.current
+        let year = calendar.component(.year, from: self)
+        let month = calendar.component(.month, from: self)
+        let day = calendar.component(.day, from: self)
+        return "Ngày \(day) tháng \(month) \(year)"
+    }
+    
     func stringWithFormat(format:String = "yyyy-MM-dd'T'HH:mm:ss.SSS") -> String {
         let dateFormater = DateFormatter()
         dateFormater.dateFormat = format

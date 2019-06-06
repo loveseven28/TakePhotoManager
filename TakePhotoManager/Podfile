@@ -12,4 +12,6 @@ target 'TakePhotoManager' do
   pod 'ReachabilitySwift'
   pod 'Firebase/Core'
   pod 'Firebase/Messaging'
+  pod 'FSPagerView'
+
 end

@@ -28,6 +28,12 @@ extension String {
 		let nonAlphaNumeric = CharacterSet.alphanumerics.inverted
 		return simple.components(separatedBy: nonAlphaNumeric).joined(separator: "")
 	}
+
+//SEARCH LOCAL
+//    let array = dataSourceCopy.filter( {
+//       let item = $0.fullName
+//       return item.lowercased().trim().forSorting.contains(searchText.lowercased().trim().forSorting)
+//    })
     
     func smartContains(_ other: String) -> Bool {
         let array : [String] = other.lowercased().components(separatedBy: " ").filter { !$0.isEmpty }

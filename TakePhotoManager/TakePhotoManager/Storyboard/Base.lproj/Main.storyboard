@@ -45,15 +45,49 @@
                                     <segue destination="xsD-ir-aml" kind="push" id="Q1m-cQ-9b4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usR-ky-7bO">
+                                <rect key="frame" x="0.0" y="184" width="414" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gkT-d5-hgS"/>
+                                </constraints>
+                                <state key="normal" title="Child View">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="hashTagButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pp7-eb-Jc0"/>
+                                    <segue destination="wpx-CF-HLx" kind="push" id="R0Q-x9-GDU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1CF-pw-EI2">
+                                <rect key="frame" x="0.0" y="232" width="414" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lpZ-YS-aDx"/>
+                                </constraints>
+                                <state key="normal" title="Gallery">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="hashTagButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ecR-nQ-tdT"/>
+                                    <segue destination="979-wF-cI9" kind="push" id="AgH-Tc-DMz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cVm-Fv-NlK" firstAttribute="top" secondItem="HEc-Nj-8IP" secondAttribute="bottom" constant="8" id="1me-Cp-N1p"/>
+                            <constraint firstItem="1CF-pw-EI2" firstAttribute="top" secondItem="usR-ky-7bO" secondAttribute="bottom" constant="8" id="4Tg-gd-z7E"/>
                             <constraint firstItem="HEc-Nj-8IP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="E90-eQ-hUc"/>
                             <constraint firstItem="HEc-Nj-8IP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HwL-Au-057"/>
+                            <constraint firstItem="usR-ky-7bO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UNa-6k-acr"/>
                             <constraint firstItem="cVm-Fv-NlK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WUL-Sb-dFy"/>
+                            <constraint firstItem="1CF-pw-EI2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hgS-5A-OhA"/>
                             <constraint firstItem="HEc-Nj-8IP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jBC-Ds-VeC"/>
+                            <constraint firstItem="1CF-pw-EI2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="s9p-oy-TsF"/>
                             <constraint firstItem="cVm-Fv-NlK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uNF-qi-RuD"/>
+                            <constraint firstItem="usR-ky-7bO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wLs-XP-iIP"/>
+                            <constraint firstItem="usR-ky-7bO" firstAttribute="top" secondItem="cVm-Fv-NlK" secondAttribute="bottom" constant="8" id="zv6-fq-kcj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -138,6 +172,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FHU-gK-Umr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2469" y="94"/>
+        </scene>
+        <!--Gallery-->
+        <scene sceneID="N5k-mI-E2o">
+            <objects>
+                <viewController id="979-wF-cI9" customClass="GalleryViewController" customModule="TakePhotoManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Z7-jP-YP7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oJq-J8-Sum" customClass="FSPagerView" customModule="FSPagerView">
+                                <rect key="frame" x="0.0" y="96" width="414" height="233"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oJq-J8-Sum" secondAttribute="height" multiplier="16:9" id="exZ-Il-oRe"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8hP-Ih-dMC" customClass="FSPageControl" customModule="FSPagerView">
+                                <rect key="frame" x="0.0" y="309" width="414" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="uXe-VF-2iy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8hP-Ih-dMC" firstAttribute="trailing" secondItem="jyp-kD-M7t" secondAttribute="trailing" id="1ku-Wh-Z8D"/>
+                            <constraint firstItem="8hP-Ih-dMC" firstAttribute="leading" secondItem="jyp-kD-M7t" secondAttribute="leading" id="4em-Tm-gDk"/>
+                            <constraint firstItem="jyp-kD-M7t" firstAttribute="trailing" secondItem="oJq-J8-Sum" secondAttribute="trailing" id="LCo-uo-EaJ"/>
+                            <constraint firstItem="8hP-Ih-dMC" firstAttribute="top" secondItem="oJq-J8-Sum" secondAttribute="bottom" constant="-20" id="VXR-Hs-BEw"/>
+                            <constraint firstItem="oJq-J8-Sum" firstAttribute="leading" secondItem="jyp-kD-M7t" secondAttribute="leading" id="aNU-5m-51T"/>
+                            <constraint firstItem="oJq-J8-Sum" firstAttribute="top" secondItem="jyp-kD-M7t" secondAttribute="top" constant="8" id="v0K-Z0-J1S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jyp-kD-M7t"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Gallery" id="sCh-1t-tLd"/>
+                    <connections>
+                        <outlet property="headerCarousel" destination="oJq-J8-Sum" id="AwC-Co-IDz"/>
+                        <outlet property="pageControl" destination="8hP-Ih-dMC" id="7Hz-Pf-f4N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EHP-r9-kEo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071.0144927536232" y="750.66964285714278"/>
+        </scene>
+        <!--Child View-->
+        <scene sceneID="rHN-sb-vAl">
+            <objects>
+                <viewController id="wpx-CF-HLx" customClass="ChildViewController" customModule="TakePhotoManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dW6-ks-2Sp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="o7Y-Da-izf"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Child View" id="MWf-0d-LPc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="opb-cA-BJd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1765" y="752"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ufX-E9-Xb5">

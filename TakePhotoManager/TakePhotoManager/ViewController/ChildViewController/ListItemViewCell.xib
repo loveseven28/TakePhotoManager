@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="103" id="xhS-f5-kRP" customClass="ListItemViewCell" customModule="InfoSoft" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="103"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xhS-f5-kRP" id="F5M-Ya-Yhu">
+                <rect key="frame" x="0.0" y="0.0" width="341" height="102.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_job" translatesAutoresizingMaskIntoConstraints="NO" id="n9s-dC-Tx9">
+                        <rect key="frame" x="10" y="16.5" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="69H-3d-3Pv"/>
+                            <constraint firstAttribute="height" constant="35" id="Pxs-F9-Gzq"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiP-uh-aOG">
+                        <rect key="frame" x="60" y="12" width="271" height="19"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zhv-D6-StM">
+                        <rect key="frame" x="60" y="36" width="271" height="14"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubu-fl-NU6">
+                        <rect key="frame" x="60" y="58" width="271" height="14"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xiP-uh-aOG" firstAttribute="top" secondItem="F5M-Ya-Yhu" secondAttribute="top" constant="12" id="3Ph-xc-5AM"/>
+                    <constraint firstAttribute="trailing" secondItem="xiP-uh-aOG" secondAttribute="trailing" constant="10" id="Ak1-78-2Di"/>
+                    <constraint firstItem="n9s-dC-Tx9" firstAttribute="leading" secondItem="F5M-Ya-Yhu" secondAttribute="leading" constant="10" id="AlO-5S-wZl"/>
+                    <constraint firstItem="n9s-dC-Tx9" firstAttribute="top" secondItem="F5M-Ya-Yhu" secondAttribute="top" constant="16.5" id="HVR-5X-nWB"/>
+                    <constraint firstItem="Ubu-fl-NU6" firstAttribute="leading" secondItem="xiP-uh-aOG" secondAttribute="leading" id="SUd-hL-ZfW"/>
+                    <constraint firstItem="zhv-D6-StM" firstAttribute="top" secondItem="xiP-uh-aOG" secondAttribute="bottom" constant="5" id="W99-qX-sxH"/>
+                    <constraint firstItem="xiP-uh-aOG" firstAttribute="leading" secondItem="n9s-dC-Tx9" secondAttribute="trailing" constant="15" id="bff-1r-KJw"/>
+                    <constraint firstItem="Ubu-fl-NU6" firstAttribute="trailing" secondItem="xiP-uh-aOG" secondAttribute="trailing" id="dpQ-L7-DWl"/>
+                    <constraint firstItem="zhv-D6-StM" firstAttribute="trailing" secondItem="xiP-uh-aOG" secondAttribute="trailing" id="gI8-Kn-q0Y"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="Ubu-fl-NU6" secondAttribute="bottom" constant="12" id="hdW-nT-S1E"/>
+                    <constraint firstItem="Ubu-fl-NU6" firstAttribute="top" secondItem="zhv-D6-StM" secondAttribute="bottom" constant="8" id="nG8-fC-p1P"/>
+                    <constraint firstItem="zhv-D6-StM" firstAttribute="leading" secondItem="xiP-uh-aOG" secondAttribute="leading" id="uN0-s8-FP6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgType" destination="n9s-dC-Tx9" id="VA8-cP-nTh"/>
+                <outlet property="lbDate" destination="zhv-D6-StM" id="ISR-Pn-LNJ"/>
+                <outlet property="lbLocation" destination="Ubu-fl-NU6" id="eNM-3N-og3"/>
+                <outlet property="lbTitle" destination="xiP-uh-aOG" id="Ngk-uZ-Wfp"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="170.46476761619192"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_job" width="35" height="35"/>
+    </resources>
+</document>
