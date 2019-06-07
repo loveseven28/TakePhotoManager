@@ -36,7 +36,7 @@ extension TamOcViewController: UICollectionViewDelegate, UICollectionViewDelegat
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let width = (collectionView.frame.size.width) / 3
+        let width = (collectionView.frame.size.width - 4) / 3
         let height = ((collectionView.frame.size.height) / 4)
         //        return CGSize(width: 80, height: 80)
         print(width)

@@ -52,7 +52,6 @@
 		390C819622AA7850005799FE /* TamOcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C819522AA7850005799FE /* TamOcViewController.swift */; };
 		390C819A22AA78ED005799FE /* TamOcCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C819822AA78ED005799FE /* TamOcCollectionViewCell.swift */; };
 		390C819B22AA78ED005799FE /* TamOcCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390C819922AA78ED005799FE /* TamOcCollectionViewCell.xib */; };
-		390C819D22AA78FB005799FE /* 1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 390C819C22AA78FB005799FE /* 1.pdf */; };
 		39159801228D689600152279 /* UILabelX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597EB228D689400152279 /* UILabelX.swift */; };
 		39159802228D689600152279 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597EC228D689400152279 /* UIBarButtonItem+Extension.swift */; };
 		39159803228D689600152279 /* UIViewXRadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597ED228D689400152279 /* UIViewXRadialGradient.swift */; };
@@ -189,7 +188,6 @@
 		390C819522AA7850005799FE /* TamOcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamOcViewController.swift; sourceTree = "<group>"; };
 		390C819822AA78ED005799FE /* TamOcCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamOcCollectionViewCell.swift; sourceTree = "<group>"; };
 		390C819922AA78ED005799FE /* TamOcCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TamOcCollectionViewCell.xib; sourceTree = "<group>"; };
-		390C819C22AA78FB005799FE /* 1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 1.pdf; sourceTree = "<group>"; };
 		391597EB228D689400152279 /* UILabelX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelX.swift; sourceTree = "<group>"; };
 		391597EC228D689400152279 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		391597ED228D689400152279 /* UIViewXRadialGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewXRadialGradient.swift; sourceTree = "<group>"; };
@@ -590,7 +588,6 @@
 		393210422293BBC400C09DE0 /* SOURCE */ = {
 			isa = PBXGroup;
 			children = (
-				390C819C22AA78FB005799FE /* 1.pdf */,
 				3932103C2293B21F00C09DE0 /* 1.jpg */,
 				3932103D2293B22000C09DE0 /* 2.jpg */,
 				3932103E2293B22000C09DE0 /* 3.jpg */,
@@ -763,7 +760,6 @@
 				393210572293BC4A00C09DE0 /* 11.jpg in Resources */,
 				393210582293BC4A00C09DE0 /* 10.jpg in Resources */,
 				3904B2FD2292A797004236F2 /* MenuTableViewCell.xib in Resources */,
-				390C819D22AA78FB005799FE /* 1.pdf in Resources */,
 				3904B2D82292960C004236F2 /* TagViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -259,9 +259,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Mmf-Q1-MWk">
-                                <rect key="frame" x="0.0" y="325" width="414" height="298.5"/>
+                                <rect key="frame" x="0.0" y="325" width="414" height="448"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="FEh-TH-GJp">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="FEh-TH-GJp">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -287,7 +287,7 @@
                         <constraints>
                             <constraint firstItem="Mmf-Q1-MWk" firstAttribute="top" secondItem="sl1-3B-ood" secondAttribute="top" constant="237" id="9LC-8E-W1r"/>
                             <constraint firstItem="Mmf-Q1-MWk" firstAttribute="leading" secondItem="sl1-3B-ood" secondAttribute="leading" id="i8Z-ps-3XF"/>
-                            <constraint firstItem="Mmf-Q1-MWk" firstAttribute="height" secondItem="u5f-Ge-Y7b" secondAttribute="height" multiplier="1/3" id="nBX-xO-Qq7"/>
+                            <constraint firstItem="Mmf-Q1-MWk" firstAttribute="height" secondItem="u5f-Ge-Y7b" secondAttribute="height" multiplier="1/2" id="nBX-xO-Qq7"/>
                             <constraint firstItem="Mmf-Q1-MWk" firstAttribute="trailing" secondItem="sl1-3B-ood" secondAttribute="trailing" id="sVn-IP-rnA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sl1-3B-ood"/>
