@@ -20,19 +20,17 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wIu-H1-2Eb">
-                        <rect key="frame" x="2.5" y="5" width="228" height="228"/>
+                        <rect key="frame" x="0.0" y="0.0" width="233" height="238"/>
                         <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="wIu-H1-2Eb" secondAttribute="height" multiplier="1:1" id="5PB-Id-GO0"/>
-                        </constraints>
                     </imageView>
                 </subviews>
             </view>
             <color key="backgroundColor" red="0.0" green="0.53333333329999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="wIu-H1-2Eb" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="ZMQ-sA-lQa"/>
-                <constraint firstAttribute="bottom" secondItem="wIu-H1-2Eb" secondAttribute="bottom" constant="5" id="ig5-RE-eME"/>
-                <constraint firstItem="wIu-H1-2Eb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="xn8-tO-lHq"/>
+                <constraint firstAttribute="trailing" secondItem="wIu-H1-2Eb" secondAttribute="trailing" id="V7l-aD-cMI"/>
+                <constraint firstItem="wIu-H1-2Eb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="awf-zv-gzF"/>
+                <constraint firstItem="wIu-H1-2Eb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="irn-Mr-aXz"/>
+                <constraint firstAttribute="bottom" secondItem="wIu-H1-2Eb" secondAttribute="bottom" id="xR8-A8-cJ5"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="233" height="238"/>

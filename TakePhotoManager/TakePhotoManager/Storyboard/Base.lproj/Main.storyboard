@@ -282,19 +282,69 @@
                                     <outlet property="delegate" destination="03s-Z2-eQs" id="XPK-C5-Zrt"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time elapsed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31K-LT-R2G">
+                                <rect key="frame" x="8" y="108" width="398" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQN-wS-0GO" customClass="UIButtonX" customModule="TakePhotoManager" customModuleProvider="target">
+                                <rect key="frame" x="107" y="222" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="TIw-2g-FoV"/>
+                                    <constraint firstAttribute="height" constant="30" id="uc3-We-fft"/>
+                                </constraints>
+                                <state key="normal" title="Calculate elapsed time">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTappedAddTime:" destination="03s-Z2-eQs" eventType="touchUpInside" id="l8u-ok-ru5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhập ngày cần tính : 2019-06-11T16:25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLJ-ev-8hL">
+                                <rect key="frame" x="8" y="143" width="398" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2019-06-11T16:19" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gPm-sN-3CZ">
+                                <rect key="frame" x="8" y="172" width="398" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="31K-LT-R2G" firstAttribute="leading" secondItem="sl1-3B-ood" secondAttribute="leading" constant="8" id="5Qi-Ss-If6"/>
                             <constraint firstItem="Mmf-Q1-MWk" firstAttribute="top" secondItem="sl1-3B-ood" secondAttribute="top" constant="237" id="9LC-8E-W1r"/>
+                            <constraint firstItem="iQN-wS-0GO" firstAttribute="centerX" secondItem="sl1-3B-ood" secondAttribute="centerX" id="BOL-zs-HaU"/>
+                            <constraint firstItem="sl1-3B-ood" firstAttribute="trailing" secondItem="VLJ-ev-8hL" secondAttribute="trailing" constant="8" id="Kja-aM-NuC"/>
+                            <constraint firstItem="VLJ-ev-8hL" firstAttribute="leading" secondItem="sl1-3B-ood" secondAttribute="leading" constant="8" id="KzV-Mu-jFV"/>
+                            <constraint firstItem="gPm-sN-3CZ" firstAttribute="top" secondItem="VLJ-ev-8hL" secondAttribute="bottom" constant="8" id="Prn-1N-n5F"/>
+                            <constraint firstItem="gPm-sN-3CZ" firstAttribute="leading" secondItem="sl1-3B-ood" secondAttribute="leading" constant="8" id="Z67-H1-gmt"/>
+                            <constraint firstItem="VLJ-ev-8hL" firstAttribute="top" secondItem="31K-LT-R2G" secondAttribute="bottom" constant="14" id="ZIS-ep-yid"/>
                             <constraint firstItem="Mmf-Q1-MWk" firstAttribute="leading" secondItem="sl1-3B-ood" secondAttribute="leading" id="i8Z-ps-3XF"/>
+                            <constraint firstItem="iQN-wS-0GO" firstAttribute="top" secondItem="gPm-sN-3CZ" secondAttribute="bottom" constant="20" id="iOg-es-LPP"/>
+                            <constraint firstItem="sl1-3B-ood" firstAttribute="trailing" secondItem="gPm-sN-3CZ" secondAttribute="trailing" constant="8" id="ijI-kZ-JQO"/>
+                            <constraint firstItem="31K-LT-R2G" firstAttribute="top" secondItem="sl1-3B-ood" secondAttribute="top" constant="20" id="kPJ-uv-Z8y"/>
                             <constraint firstItem="Mmf-Q1-MWk" firstAttribute="height" secondItem="u5f-Ge-Y7b" secondAttribute="height" multiplier="1/2" id="nBX-xO-Qq7"/>
                             <constraint firstItem="Mmf-Q1-MWk" firstAttribute="trailing" secondItem="sl1-3B-ood" secondAttribute="trailing" id="sVn-IP-rnA"/>
+                            <constraint firstItem="sl1-3B-ood" firstAttribute="trailing" secondItem="31K-LT-R2G" secondAttribute="trailing" constant="8" id="tYj-kK-CqN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sl1-3B-ood"/>
                     </view>
                     <navigationItem key="navigationItem" id="cK6-Nf-JUx"/>
                     <connections>
                         <outlet property="collectionView" destination="Mmf-Q1-MWk" id="Adg-jE-8sQ"/>
+                        <outlet property="lbTimeElapsed" destination="31K-LT-R2G" id="UZV-81-J9O"/>
+                        <outlet property="tfTime" destination="gPm-sN-3CZ" id="3ks-qA-Tq4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jcD-E4-yKb" userLabel="First Responder" sceneMemberID="firstResponder"/>

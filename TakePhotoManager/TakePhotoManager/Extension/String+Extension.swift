@@ -181,13 +181,10 @@ extension String {
         return false
     }
     
-    func timeAgoSinceDate(_ date: Date, currentDate: Date, numericDates: Bool = true) -> String {
-        let calendar = Calendar.current
-        let now = currentDate
-        let earliest = (now as NSDate).earlierDate(date)
-        let latest = (earliest == now) ? date : now
-        let components:DateComponents = (calendar as NSCalendar).components([NSCalendar.Unit.minute , NSCalendar.Unit.hour , NSCalendar.Unit.day , NSCalendar.Unit.weekOfYear , NSCalendar.Unit.month , NSCalendar.Unit.year , NSCalendar.Unit.second], from: earliest, to: latest, options: NSCalendar.Options())
-        
+    func timeAgoSinceDate(_ date: Date, currentDate: Date = Date(), numericDates: Bool = true) -> String {
+        let components = Calendar.current.dateComponents([.second, .minute, .hour, .day, .weekOfYear, .weekday, .month, .year], from: date, to: currentDate)
+        let componentsTime = Calendar.current.dateComponents([.hour, .minute], from: date)
+        let timeDisplay = String(format: "%02d:%02d", componentsTime.hour!, componentsTime.minute!)
         if (components.year! >= 2) {
             return "\(components.year!) năm trước"
         } else if (components.year! >= 1){
@@ -200,36 +197,45 @@ extension String {
             return "\(components.month!) tháng trước"
         } else if (components.month! >= 1){
             if (numericDates){
-                return "1 tháng trước"
+                return "1 tháng trước lúc \(timeDisplay)"
             } else {
-                return "Tháng trước"
+                return "Tháng trước lúc \(timeDisplay)"
             }
         } else if (components.weekOfYear! >= 2) {
-            return "\(components.weekOfYear!) tuần trước"
+            return "\(components.weekOfYear!) tuần trước lúc \(timeDisplay)"
         } else if (components.weekOfYear! >= 1){
             if (numericDates){
-                return "1 tuần trước"
+                return "1 tuần trước lúc \(timeDisplay)"
             } else {
-                return "tuần trước"
+                return "tuần trước lúc \(timeDisplay)"
             }
         } else if (components.day! >= 2) {
-            return "\(components.day!) ngày trước"
-        } else if (components.day! >= 1){
-            if (numericDates){
-                return "1 ngày trước"
+            if (components.day! >= 7) {
+                return "\(components.day!) tháng \(components.month!) lúc \(timeDisplay)"
             } else {
-                return "Hôm qua"
+                let dateFormater = DateFormatter()
+                dateFormater.dateFormat = "EEEE"
+                let locate = Locale(identifier: "vi_VN")
+                dateFormater.locale = locate
+                let temp = dateFormater.string(from: date)
+                return "\(temp) lúc \(timeDisplay)"
+            }
+        } else if (components.day! >= 1){
+            if (numericDates) {
+                return "1 ngày lúc \(timeDisplay)"
+            } else {
+                return "Hôm qua lúc \(timeDisplay)"
             }
         } else if (components.hour! >= 2) {
-            return "\(components.hour!) giờ trước"
+            return "\(components.hour!) giờ " + (components.minute! > 0 ?  "\(components.minute!) phút trước" : "trước")
         } else if (components.hour! >= 1){
-            if (numericDates){
-                return "1 giờ trước"
+            if (numericDates) {
+                return "1 giờ \(String(format: "%02d", components.minute!)) phút trước"
             } else {
-                return "Một giờ trước"
+                return "Một giờ \(String(format: "%02d", components.minute!)) phút trước"
             }
         } else if (components.minute! >= 2) {
-            return "\(components.minute!) phút trước"
+            return "\(String(format: "%02d", components.minute!)) phút trước"
         } else if (components.minute! >= 1){
             if (numericDates){
                 return "1 phút trước"
@@ -241,6 +247,7 @@ extension String {
         } else {
             return "Vừa mới đây"
         }
+        
     }
     
     func getYearDataSource(minYear: Int) -> String {

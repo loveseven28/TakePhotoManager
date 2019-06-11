@@ -53,4 +53,15 @@ extension Date {
         
     }
     
+    func compareDay(day1: Date, day2: Date, component: Calendar.Component) {
+        switch Calendar.current.compare(day1, to: day2, toGranularity: component) {
+        case .orderedDescending:
+            print("DESCENDING")
+        case .orderedAscending:
+            print("ASCENDING")
+        case .orderedSame:
+            print("SAME")
+        }
+    }
+    
 }
