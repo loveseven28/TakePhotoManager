@@ -115,6 +115,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tamOcButton" destination="c0T-A0-Xmi" id="wtS-Ro-EZn"/>
+                        <outlet property="tamOcConstraintTop" destination="nPZ-Af-BFj" id="bWQ-jg-avI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
