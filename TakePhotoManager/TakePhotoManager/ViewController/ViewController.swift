@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         cameraManager = CameraManager(chooseImageButton: takePhotoButton, rootViewController: self)
         cameraManager!.delegate = self
+//        AttachmentHandler.shared.showAttachmentActionSheet(vc: self)
     }
 }
 

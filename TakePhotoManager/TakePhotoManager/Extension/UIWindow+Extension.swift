@@ -62,7 +62,7 @@ extension UIWindow {
 }
 
 
-extension UIApplication {
+extension UIWindow {
     var statusBarView: UIView? {
         if responds(to: Selector(("statusBar"))) {
             return value(forKey: "statusBar") as? UIView

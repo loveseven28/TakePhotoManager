@@ -147,6 +147,17 @@ class BaseViewController: UIViewController {
     func getNumberNoti() {
        
     }
+    
+    class func lock(_ orientation: UIInterfaceOrientationMask) {
+        if let delegate = UIApplication.shared.delegate as? AppDelegate {
+            delegate.orientationLock = orientation
+        }
+    }
+    
+    class func lock(_ orientation: UIInterfaceOrientationMask, rotate: UIInterfaceOrientation) {
+        lock(orientation)
+        UIDevice.current.setValue(rotate.rawValue, forKey: "orientation")
+    }
 }
 
 //MARK: UIViewControllerTransitioningDelegate

@@ -54,18 +54,3 @@ class ViewBase: UIView {
     }
 
 }
-
-extension UIView {
-    
-    var viewController: UIViewController? {
-        
-        var responder: UIResponder? = self
-        while responder != nil {
-            if let responder = responder as? UIViewController {
-                return responder
-            }
-            responder = responder?.next
-        }
-        return nil
-    }
-}

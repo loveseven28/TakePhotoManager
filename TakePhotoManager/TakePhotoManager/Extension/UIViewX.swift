@@ -130,4 +130,44 @@ extension UIView {
     }
 }
 
+extension UIView {
+    func shake() {
+        let animation = CAKeyframeAnimation(keyPath: "transform.translation.x")
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+        animation.duration = 0.6
+        animation.values = [-20, 20, -20, 20, -10, 10, -5, 5, 0]
+        self.layer.add(animation, forKey: "shake")
+    }
+    
+    func wiggle() {
+        guard self.layer.animation(forKey: "wiggle") == nil else { return }
+        let angle = 0.04
+        let wiggle = CAKeyframeAnimation(keyPath: "transform.rotation.z")
+        wiggle.values = [-angle, angle]
+        wiggle.autoreverses = true
+        wiggle.duration = randomize(interval: 0.1, withVariance: 0.025)
+        wiggle.repeatCount = 5
+        self.layer.add(wiggle, forKey: "wiggle")
+    }
+    
+    func randomize(interval: TimeInterval, withVariance variance: Double) -> Double{
+        let random = (Double(arc4random_uniform(1000)) - 500.0) / 500.0
+        return interval + variance * random
+    }
+}
 
+//MARK: get parent View
+extension UIView {
+    
+    var viewController: UIViewController? {
+        
+        var responder: UIResponder? = self
+        while responder != nil {
+            if let responder = responder as? UIViewController {
+                return responder
+            }
+            responder = responder?.next
+        }
+        return nil
+    }
+}
