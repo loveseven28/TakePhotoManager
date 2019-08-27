@@ -228,7 +228,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jyp-kD-M7t"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Gallery" id="sCh-1t-tLd"/>
+                    <navigationItem key="navigationItem" title="Gallery" id="sCh-1t-tLd">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="PsR-iR-6Ju">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="979-wF-cI9" id="sAZ-k0-GVM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="headerCarousel" destination="oJq-J8-Sum" id="AwC-Co-IDz"/>
                         <outlet property="pageControl" destination="8hP-Ih-dMC" id="7Hz-Pf-f4N"/>

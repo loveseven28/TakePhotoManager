@@ -29,6 +29,10 @@ class MainViewController: BaseViewController {
         }
         
         addLabel()
+        
+        getAddresFromIPAddress { (result, erreo) in
+            print(result!)
+        }
     }
     
     @IBAction func menuButtonTapped(_ sender: UIButton) {
@@ -54,6 +58,28 @@ class MainViewController: BaseViewController {
         
         label.center = view.center
         view.addSubview(label)
+    }
+    
+    private func getAddresFromIPAddress(_ complete: @escaping ([String: Any]?, Error?) -> Void) {
+        let urlString = "http://ip-api.com/json"
+        guard let url = URL(string: urlString) else {
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            if let data = data {
+                do {
+                    if let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] {
+                        complete(json, nil)
+                    }
+                    
+                } catch {
+                    
+                }
+            }
+            }.resume()
     }
 }
 

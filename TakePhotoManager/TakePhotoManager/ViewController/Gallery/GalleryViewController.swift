@@ -8,6 +8,8 @@
 
 import UIKit
 import FSPagerView
+import BSImagePicker
+import Photos
 
 class GalleryViewController: BaseViewController {
     @IBOutlet weak var headerCarousel: FSPagerView!
@@ -59,6 +61,81 @@ class GalleryViewController: BaseViewController {
             photoGallery.currentPage = index
         }
     }
+    
+    @IBAction func addButtonTapped(_ sender: Any) {
+        self.images = []
+        let vc = BSImagePickerViewController()
+        vc.maxNumberOfSelections = 10
+        vc.takePhotoIcon = UIImage(named: "chat")
+        
+        vc.albumButton.tintColor = UIColor.green
+        vc.cancelButton.tintColor = UIColor.red
+        vc.doneButton.tintColor = UIColor.red
+        vc.selectionFillColor = AppColor.mainColor
+        vc.selectionStrokeColor = UIColor.white
+        vc.selectionShadowColor = UIColor.red
+        vc.selectionTextAttributes[NSAttributedString.Key.foregroundColor] = UIColor.white
+        bs_presentImagePickerController(vc, animated: true,
+                                        select: { (asset: PHAsset) -> Void in
+                                            // User selected an asset.
+                                            // Do something with it, start upload perhaps?
+        }, deselect: { (asset: PHAsset) -> Void in
+            // User deselected an assets.
+            // Do something, cancel upload?
+        }, cancel: { (assets: [PHAsset]) -> Void in
+            // User cancelled. And this where the assets currently selected.
+        }, finish: { (assets: [PHAsset]) -> Void in
+            // User finished with these assets
+            let requestOptions = PHImageRequestOptions()
+            requestOptions.resizeMode = PHImageRequestOptionsResizeMode.exact
+            requestOptions.deliveryMode = PHImageRequestOptionsDeliveryMode.highQualityFormat
+            requestOptions.isNetworkAccessAllowed = true
+            requestOptions.progressHandler = { (progress, error, _, _) in
+                print("load image from icloud progress: ", progress)
+            }
+            // this one is key
+            requestOptions.isSynchronous = true
+            let myGroup = DispatchGroup()
+            for i in 0..<assets.count {
+                myGroup.enter()
+                if assets[i].mediaType == PHAssetMediaType.image {
+                    PHImageManager.default().requestImage(for: assets[i], targetSize: PHImageManagerMaximumSize, contentMode: PHImageContentMode.default, options: requestOptions, resultHandler: { (pickedImage, info) in
+                        assets[i].requestContentEditingInput(with: nil, completionHandler: {[weak self] (ContentEditingInput, infoOfThePicture)  in
+                            guard let `self` = self else { return }
+                            if let imageFile = ContentEditingInput?.fullSizeImageURL {
+                                let imageName         = "\(i)_" + imageFile.lastPathComponent
+                                let documentDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
+                                let photoURL          = NSURL(fileURLWithPath: documentDirectory)
+                                let localPath         = photoURL.appendingPathComponent(imageName)
+                                do {
+                                    try pickedImage?.jpegData(compressionQuality: 0.5)?.write(to: localPath!)
+                                    if let image = pickedImage , let _ = localPath{
+                                        self.images.append(image)
+                                    }
+                                    print("file saved")
+                                }catch {
+                                    print("error saving file")
+                                }
+                                
+                                myGroup.leave()
+                            }
+                        })
+                    })
+                }
+                myGroup.notify(queue: .main) {[weak self] in
+                    guard let `self` = self else { return }
+                    if i == (assets.count - 1) {
+                        self.headerCarousel.reloadData()
+                        self.setUpPageView()
+                        print("COMPLETION Get image")
+
+                    }
+                }
+            }
+        }, completion: nil)
+
+    }
+    
 
 }
 

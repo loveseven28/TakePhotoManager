@@ -37,6 +37,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     fileprivate func setupNavigationBar(){
+//        UINavigationBar.appearance().barTintColor = AppColor.mainColor
+//        UINavigationBar.appearance().backgroundColor = AppColor.mainColor
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font : AppFont.Roboto.font(ofSize: 16, weight: .Bold),
                                                             NSAttributedString.Key.foregroundColor : UIColor.white] as [NSAttributedString.Key : Any]

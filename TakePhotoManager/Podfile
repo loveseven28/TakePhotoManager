@@ -13,5 +13,7 @@ target 'TakePhotoManager' do
   pod 'Firebase/Core'
   pod 'Firebase/Messaging'
   pod 'FSPagerView'
+  pod 'IQKeyboardManager'
+  pod 'BSImagePicker', '~> 2.8'
 
 end
