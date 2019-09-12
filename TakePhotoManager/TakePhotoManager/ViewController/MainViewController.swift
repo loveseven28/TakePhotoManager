@@ -13,7 +13,7 @@ class MainViewController: BaseViewController {
     var locationManager: CLLocationManager?
     @IBOutlet weak var tamOcButton: UIButton!
     @IBOutlet weak var tamOcConstraintTop: NSLayoutConstraint!
-    
+    var accountKit: AccountKitHelper?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -35,12 +35,21 @@ class MainViewController: BaseViewController {
         }
     }
     
+    private func validateSMS(phoneNumber: String) {
+        accountKit = AccountKitHelper(parentVC: self, phoneNumber: phoneNumber)
+        accountKit?.delegate = self
+    }
+    
     @IBAction func menuButtonTapped(_ sender: UIButton) {
         self.present(self.menuVC, animated: true, completion:   nil)
     }
 
     @IBAction func hashTagButtonTapped(_ sender: Any) {
         
+    }
+    
+    @IBAction func accountKit(_ sender: UIButton) {
+        self.validateSMS(phoneNumber: "0909921679")
     }
     
     func addLabel() {
@@ -95,7 +104,13 @@ extension MainViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
-            print("New location is \(location)")
+//            print("New location is \(location)")
         }
+    }
+}
+
+extension MainViewController: AccountKitHelperDelegate {
+    func accountKitHelper(_ accountKitHelper: AccountKitHelper, didCompleteLoginWith phoneNumber: String) {
+        print("SDT: ", phoneNumber)
     }
 }

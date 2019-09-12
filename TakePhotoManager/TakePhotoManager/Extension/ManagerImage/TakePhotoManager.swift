@@ -26,13 +26,45 @@ class TakePhotoManager: UIViewController{
     var captureSessionQueue : DispatchQueue!
     var videoPreviewLayer: AVCaptureVideoPreviewLayer!
     var photoDataOutput: AVCapturePhotoOutput!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.checkPemisstion()
         self.shadowButton()
         self.closeButton.layer.cornerRadius = 23
         self.switchButton.layer.cornerRadius = 23
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.rotated), name: UIDevice.orientationDidChangeNotification, object: nil)
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    @objc func rotated() {
+        if UIDevice.current.orientation == UIDeviceOrientation.landscapeLeft {
+            self.rotateButton(isLandScape: true, value: CGFloat.pi / 2.0)
+        }
+        else if UIDevice.current.orientation == UIDeviceOrientation.landscapeRight {
+            self.rotateButton(isLandScape: true, value: -CGFloat.pi / 2.0)
+        }
+        else if UIDevice.current.orientation == UIDeviceOrientation.portraitUpsideDown {
+            self.rotateButton(isLandScape: false, value: nil)
+        }
+        else if UIDevice.current.orientation == UIDeviceOrientation.portrait {
+            self.rotateButton(isLandScape: false, value: nil)
+        }
+    }
+    
+    func rotateButton(isLandScape: Bool, value: CGFloat?) {
+        UIView.animate(withDuration: 0.5) {
+            if !isLandScape {
+                self.switchButton.transform = CGAffineTransform.identity
+                self.closeButton.transform = CGAffineTransform.identity
+            } else {
+                self.switchButton.transform = CGAffineTransform(rotationAngle: value ?? 0.0)
+                self.closeButton.transform = CGAffineTransform(rotationAngle: value ?? 0.0)
+            }
+        }
     }
 
     public func shadowButton() {
@@ -47,6 +79,17 @@ class TakePhotoManager: UIViewController{
         videoPreviewLayer?.frame = view.bounds
         if let previewLayer = videoPreviewLayer ,(previewLayer.connection?.isVideoOrientationSupported)! {
             previewLayer.connection?.videoOrientation = UIApplication.shared.statusBarOrientation.videoOrientation ?? .portrait
+        }
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        if UIDevice.current.orientation.isLandscape {
+            print("Landscape")
+            
+        } else {
+            print("Portrait")
+            
         }
     }
     

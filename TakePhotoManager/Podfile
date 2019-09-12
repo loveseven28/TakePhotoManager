@@ -15,5 +15,7 @@ target 'TakePhotoManager' do
   pod 'FSPagerView'
   pod 'IQKeyboardManager'
   pod 'BSImagePicker', '~> 2.8'
+  pod 'AccountKit'
+#  pod "MomoiOSSwiftSdk", :git => "https://github.com/momodevelopment/MomoiOSSwiftSdk.git", :branch => "master", submodules: true
 
 end

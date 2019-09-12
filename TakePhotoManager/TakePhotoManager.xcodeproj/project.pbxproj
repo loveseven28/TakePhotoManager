@@ -76,6 +76,7 @@
 		39159815228D689600152279 /* Date-Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391597FF228D689600152279 /* Date-Helper.swift */; };
 		39159816228D689600152279 /* UIVisualEffectViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39159800228D689600152279 /* UIVisualEffectViewX.swift */; };
 		391B3E2022E0331A0015DA61 /* FloatingButtonWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391B3E1F22E0331A0015DA61 /* FloatingButtonWindow.swift */; };
+		392828D723176CB3007DADD0 /* AccountKitHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392828D623176CB3007DADD0 /* AccountKitHelper.swift */; };
 		39320FFF2293944400C09DE0 /* NotiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39320FFB2293944400C09DE0 /* NotiRouter.swift */; };
 		393210002293944400C09DE0 /* SwiftDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39320FFC2293944400C09DE0 /* SwiftDecoder.swift */; };
 		393210012293944400C09DE0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39320FFD2293944400C09DE0 /* NetworkManager.swift */; };
@@ -214,6 +215,7 @@
 		391597FF228D689600152279 /* Date-Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date-Helper.swift"; sourceTree = "<group>"; };
 		39159800228D689600152279 /* UIVisualEffectViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVisualEffectViewX.swift; sourceTree = "<group>"; };
 		391B3E1F22E0331A0015DA61 /* FloatingButtonWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingButtonWindow.swift; sourceTree = "<group>"; };
+		392828D623176CB3007DADD0 /* AccountKitHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountKitHelper.swift; sourceTree = "<group>"; };
 		39320FFB2293944400C09DE0 /* NotiRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotiRouter.swift; sourceTree = "<group>"; };
 		39320FFC2293944400C09DE0 /* SwiftDecoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDecoder.swift; sourceTree = "<group>"; };
 		39320FFD2293944400C09DE0 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -479,6 +481,7 @@
 		391597EA228D687C00152279 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				392828D623176CB3007DADD0 /* AccountKitHelper.swift */,
 				3904C7922282DCD400D3D057 /* ManagerImage */,
 				391597F7228D689500152279 /* BadgeButton+Extension.swift */,
 				391597FF228D689600152279 /* Date-Helper.swift */,
@@ -641,6 +644,7 @@
 				3904C75E2282DC9000D3D057 /* Frameworks */,
 				3904C75F2282DC9000D3D057 /* Resources */,
 				62E71A2E3A2D243AC20E0F3C /* [CP] Embed Pods Frameworks */,
+				6C4EB18397116E6ACBECC5CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -831,6 +835,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6C4EB18397116E6ACBECC5CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -840,6 +861,7 @@
 			files = (
 				39159809228D689600152279 /* UIViewAnchorPoint.swift in Sources */,
 				3904B2F02292A6B2004236F2 /* AppColor.swift in Sources */,
+				392828D723176CB3007DADD0 /* AccountKitHelper.swift in Sources */,
 				39159805228D689600152279 /* UITextFieldX.swift in Sources */,
 				3904C79D2282DCD400D3D057 /* PreviewImageController.swift in Sources */,
 				3904B2F42292A6B2004236F2 /* AppFont.swift in Sources */,
