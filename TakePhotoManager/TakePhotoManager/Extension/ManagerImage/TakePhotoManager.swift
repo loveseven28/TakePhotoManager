@@ -9,6 +9,8 @@
 import Foundation
 import AVFoundation
 import UIKit
+import CoreMotion
+
 
 protocol TakePhotoManagerDelegate: class {
     func imageDidGet(image: UIImage)
@@ -19,13 +21,15 @@ class TakePhotoManager: UIViewController{
     @IBOutlet weak var TakeImgeButton: UIButton!
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var switchButton: UIButton!
-    
+    let motionManager = CMMotionManager()
     weak var delegate : TakePhotoManagerDelegate?
     var captureSession = AVCaptureSession()
     var currentCameraPosition : AVCaptureDevice.Position = .front
     var captureSessionQueue : DispatchQueue!
     var videoPreviewLayer: AVCaptureVideoPreviewLayer!
     var photoDataOutput: AVCapturePhotoOutput!
+    var timer: Timer?
+    var orientationString: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         self.checkPemisstion()
@@ -33,11 +37,47 @@ class TakePhotoManager: UIViewController{
         self.closeButton.layer.cornerRadius = 23
         self.switchButton.layer.cornerRadius = 23
         
-        NotificationCenter.default.addObserver(self, selector: #selector(self.rotated), name: UIDevice.orientationDidChangeNotification, object: nil)
+        // if device don't lock screen
+//        NotificationCenter.default.addObserver(self, selector: #selector(self.rotated), name: UIDevice.orientationDidChangeNotification, object: nil)
+        
+        motionManager.startAccelerometerUpdates()
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
+    }
+    
+    @objc func update() {
+        if let accelerometerData = motionManager.accelerometerData {
+            if accelerometerData.acceleration.x > 0.8 && orientationString != "turn right" {
+                // turn right
+                print("turn right")
+                self.orientationString = "turn right"
+                self.rotateButton(isLandScape: true, value: -CGFloat.pi / 2.0)
+            }
+            
+            if accelerometerData.acceleration.x < -0.8 && orientationString != "turn left" {
+                //turn left
+                print("turn left")
+                self.orientationString = "turn left"
+                self.rotateButton(isLandScape: true, value: CGFloat.pi / 2.0)
+            }
+            
+            if accelerometerData.acceleration.y > 0.8 && orientationString != "portraitUpsideDown" {
+                print("portraitUpsideDown", accelerometerData.acceleration.y)
+                self.orientationString = "portraitUpsideDown"
+                self.rotateButton(isLandScape: true, value: CGFloat.pi)
+            }
+            
+            if accelerometerData.acceleration.y < -0.8 && orientationString != "portrait" {
+                print("portrait", accelerometerData.acceleration.y)
+                self.orientationString = "portrait"
+                self.rotateButton(isLandScape: false, value: nil)
+            }
+        }
     }
     
     deinit {
         NotificationCenter.default.removeObserver(self)
+        self.timer?.invalidate()
+        self.timer = nil
     }
     
     @objc func rotated() {
@@ -79,17 +119,6 @@ class TakePhotoManager: UIViewController{
         videoPreviewLayer?.frame = view.bounds
         if let previewLayer = videoPreviewLayer ,(previewLayer.connection?.isVideoOrientationSupported)! {
             previewLayer.connection?.videoOrientation = UIApplication.shared.statusBarOrientation.videoOrientation ?? .portrait
-        }
-    }
-    
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransition(to: size, with: coordinator)
-        if UIDevice.current.orientation.isLandscape {
-            print("Landscape")
-            
-        } else {
-            print("Portrait")
-            
         }
     }
     

@@ -19,10 +19,7 @@ class MainViewController: BaseViewController {
 
         initMenuView()
         setGradientNavi()
-        locationManager = CLLocationManager()
-        locationManager?.delegate = self
-        locationManager?.requestWhenInUseAuthorization()
-        locationManager?.showsBackgroundLocationIndicator = false
+        
         tamOcConstraintTop.constant = 50
         UIView.animate(withDuration: 0.5) {
             self.view.layoutIfNeeded()
@@ -38,6 +35,13 @@ class MainViewController: BaseViewController {
     private func validateSMS(phoneNumber: String) {
         accountKit = AccountKitHelper(parentVC: self, phoneNumber: phoneNumber)
         accountKit?.delegate = self
+    }
+    
+    private func detectLocation() {
+        locationManager = CLLocationManager()
+        locationManager?.delegate = self
+        locationManager?.requestWhenInUseAuthorization()
+        locationManager?.showsBackgroundLocationIndicator = false
     }
     
     @IBAction func menuButtonTapped(_ sender: UIButton) {
