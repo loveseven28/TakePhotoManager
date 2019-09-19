@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="121" id="KGk-i7-Jjw" customClass="ListGroupTableViewCell" customModule="TakePhotoManager" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="525" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="525" height="120.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vVX-iT-plm">
+                        <rect key="frame" x="8" y="4" width="100" height="100"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="NXg-1S-ptd">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="48"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-default" translatesAutoresizingMaskIntoConstraints="NO" id="Wto-yx-gOc" customClass="UIImageViewX" customModule="TakePhotoManager" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                        <color key="backgroundColor" red="0.85882352939999995" green="0.2666666667" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="48" id="E80-UZ-EGR"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-default" translatesAutoresizingMaskIntoConstraints="NO" id="xZF-0c-zSR" customClass="UIImageViewX" customModule="TakePhotoManager" customModuleProvider="target">
+                                        <rect key="frame" x="52" y="0.0" width="48" height="48"/>
+                                        <color key="backgroundColor" red="0.83137254900000002" green="0.75294117650000003" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="REY-zz-rSR">
+                                <rect key="frame" x="0.0" y="52" width="100" height="48"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-default" translatesAutoresizingMaskIntoConstraints="NO" id="7Nh-ut-bxC" customClass="UIImageViewX" customModule="TakePhotoManager" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                        <color key="backgroundColor" red="0.0" green="0.58042204379999995" blue="0.36857366559999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="7Nh-ut-bxC" secondAttribute="height" multiplier="1:1" id="BVb-ji-nMV"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-default" translatesAutoresizingMaskIntoConstraints="NO" id="P5r-1y-43Q" customClass="UIImageViewX" customModule="TakePhotoManager" customModuleProvider="target">
+                                        <rect key="frame" x="52" y="0.0" width="48" height="48"/>
+                                        <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="P5r-1y-43Q" secondAttribute="height" multiplier="1:1" id="LbY-m0-f9j"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="92l-pD-MeH">
+                                <rect key="frame" x="10" y="10" width="80" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-default" translatesAutoresizingMaskIntoConstraints="NO" id="nWS-Dr-uG3" customClass="UIImageViewX" customModule="TakePhotoManager" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NXg-1S-ptd" firstAttribute="top" secondItem="vVX-iT-plm" secondAttribute="top" id="3z4-Zd-dt3"/>
+                            <constraint firstAttribute="trailing" secondItem="NXg-1S-ptd" secondAttribute="trailing" priority="250" id="9vW-Ex-Fqe"/>
+                            <constraint firstAttribute="width" secondItem="vVX-iT-plm" secondAttribute="height" multiplier="1:1" id="AbF-03-Qkd"/>
+                            <constraint firstItem="REY-zz-rSR" firstAttribute="leading" secondItem="vVX-iT-plm" secondAttribute="leading" id="BUu-1G-OS5"/>
+                            <constraint firstItem="NXg-1S-ptd" firstAttribute="height" secondItem="vVX-iT-plm" secondAttribute="height" multiplier="1/2" constant="-2" id="ENP-zh-Qzr"/>
+                            <constraint firstAttribute="bottom" secondItem="REY-zz-rSR" secondAttribute="bottom" id="HLz-2s-2l1"/>
+                            <constraint firstItem="NXg-1S-ptd" firstAttribute="centerX" secondItem="vVX-iT-plm" secondAttribute="centerX" id="JkR-XE-nZa"/>
+                            <constraint firstAttribute="bottom" secondItem="92l-pD-MeH" secondAttribute="bottom" constant="10" id="K3f-Pc-gIO"/>
+                            <constraint firstItem="NXg-1S-ptd" firstAttribute="leading" secondItem="vVX-iT-plm" secondAttribute="leading" priority="250" id="LXe-qu-AGv"/>
+                            <constraint firstAttribute="width" constant="100" id="LeJ-Nu-cSg"/>
+                            <constraint firstItem="92l-pD-MeH" firstAttribute="leading" secondItem="vVX-iT-plm" secondAttribute="leading" constant="10" id="PFV-po-dZy"/>
+                            <constraint firstItem="92l-pD-MeH" firstAttribute="top" secondItem="vVX-iT-plm" secondAttribute="top" constant="10" id="UCq-bv-KUq"/>
+                            <constraint firstAttribute="trailing" secondItem="REY-zz-rSR" secondAttribute="trailing" id="pjR-mJ-gko"/>
+                            <constraint firstAttribute="trailing" secondItem="92l-pD-MeH" secondAttribute="trailing" constant="10" id="s2J-yE-Fga"/>
+                            <constraint firstItem="REY-zz-rSR" firstAttribute="height" secondItem="NXg-1S-ptd" secondAttribute="height" id="ssp-Bz-5Wt"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name group" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2F-wR-mmw">
+                        <rect key="frame" x="118" y="12" width="397" height="22"/>
+                        <fontDescription key="fontDescription" name="NotoSansChakma-Regular" family="Noto Sans Chakma" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cái này là chat test ... .." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="np9-aQ-5vY">
+                        <rect key="frame" x="118" y="46" width="397" height="19"/>
+                        <fontDescription key="fontDescription" name="NotoSansChakma-Regular" family="Noto Sans Chakma" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="np9-aQ-5vY" firstAttribute="leading" secondItem="vVX-iT-plm" secondAttribute="trailing" constant="10" id="6HI-dm-kPe"/>
+                    <constraint firstAttribute="trailing" secondItem="G2F-wR-mmw" secondAttribute="trailing" constant="10" id="FAd-8h-eSu"/>
+                    <constraint firstItem="vVX-iT-plm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="SBb-kz-lbv"/>
+                    <constraint firstItem="vVX-iT-plm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="lOS-jy-GHM"/>
+                    <constraint firstItem="G2F-wR-mmw" firstAttribute="leading" secondItem="vVX-iT-plm" secondAttribute="trailing" constant="10" id="mxF-G3-ZAf"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vVX-iT-plm" secondAttribute="bottom" constant="4" id="scd-UK-BN9"/>
+                    <constraint firstAttribute="trailing" secondItem="np9-aQ-5vY" secondAttribute="trailing" constant="10" id="wZB-w2-aVK"/>
+                    <constraint firstItem="np9-aQ-5vY" firstAttribute="top" secondItem="G2F-wR-mmw" secondAttribute="bottom" constant="12" id="yex-0V-D0t"/>
+                    <constraint firstItem="G2F-wR-mmw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="zc1-e0-7sj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageView1" destination="nWS-Dr-uG3" id="lcR-Sr-KAP"/>
+                <outletCollection property="imageView2" destination="Wto-yx-gOc" collectionClass="NSMutableArray" id="sXq-bp-AG6"/>
+                <outletCollection property="imageView2" destination="xZF-0c-zSR" collectionClass="NSMutableArray" id="x0V-mP-PZ0"/>
+                <outletCollection property="imageView2" destination="7Nh-ut-bxC" collectionClass="NSMutableArray" id="B2S-G5-fQV"/>
+                <outletCollection property="imageView2" destination="P5r-1y-43Q" collectionClass="NSMutableArray" id="k80-xb-qa2"/>
+            </connections>
+            <point key="canvasLocation" x="19.565217391304348" y="98.102678571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="user-default" width="500" height="500"/>
+    </resources>
+</document>

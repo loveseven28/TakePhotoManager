@@ -15,9 +15,9 @@ extension UIStoryboard {
         return UIStoryboard(name: name, bundle:  Bundle.main)
     }
     
-//    class func homeViewController() -> HomeViewController {
-//        return UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: HomeViewController.nib) as! HomeViewController
-//    }
+    class func chatViewController() -> ChatVC {
+        return UIStoryboard(name: "Chat", bundle: nil).instantiateViewController(withIdentifier: ChatVC.nib) as! ChatVC
+    }
     
     
 }

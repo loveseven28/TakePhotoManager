@@ -49,6 +49,17 @@
 		3904C7A02282DCD400D3D057 /* TakePhotoManager.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3904C7982282DCD400D3D057 /* TakePhotoManager.xib */; };
 		3904C7A12282DCD400D3D057 /* CropImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3904C7992282DCD400D3D057 /* CropImageViewController.xib */; };
 		3904C7A22282DCD400D3D057 /* PreviewImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3904C79A2282DCD400D3D057 /* PreviewImageController.xib */; };
+		390982C123332C5B006F2697 /* SendMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390982BF23332C5B006F2697 /* SendMessageView.swift */; };
+		390982C223332C5B006F2697 /* SendMessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390982C023332C5B006F2697 /* SendMessageView.xib */; };
+		390982C423332C83006F2697 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390982C323332C83006F2697 /* Chat.storyboard */; };
+		390982C623332CF5006F2697 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390982C523332CF5006F2697 /* ChatVC.swift */; };
+		390982CD23332D0E006F2697 /* ChatLeftTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390982C923332D0E006F2697 /* ChatLeftTVCell.xib */; };
+		390982CE23332D0E006F2697 /* ChatRightTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390982CA23332D0E006F2697 /* ChatRightTVCell.xib */; };
+		390982CF23332D0E006F2697 /* ChatRightTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390982CB23332D0E006F2697 /* ChatRightTVCell.swift */; };
+		390982D023332D0E006F2697 /* ChatLeftTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390982CC23332D0E006F2697 /* ChatLeftTVCell.swift */; };
+		390982D3233337AF006F2697 /* ListGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390982D2233337AF006F2697 /* ListGroupViewController.swift */; };
+		390982D623333809006F2697 /* ListGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390982D423333809006F2697 /* ListGroupTableViewCell.swift */; };
+		390982D723333809006F2697 /* ListGroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390982D523333809006F2697 /* ListGroupTableViewCell.xib */; };
 		390C819622AA7850005799FE /* TamOcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C819522AA7850005799FE /* TamOcViewController.swift */; };
 		390C819A22AA78ED005799FE /* TamOcCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390C819822AA78ED005799FE /* TamOcCollectionViewCell.swift */; };
 		390C819B22AA78ED005799FE /* TamOcCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390C819922AA78ED005799FE /* TamOcCollectionViewCell.xib */; };
@@ -188,6 +199,17 @@
 		3904C7982282DCD400D3D057 /* TakePhotoManager.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TakePhotoManager.xib; sourceTree = "<group>"; };
 		3904C7992282DCD400D3D057 /* CropImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CropImageViewController.xib; sourceTree = "<group>"; };
 		3904C79A2282DCD400D3D057 /* PreviewImageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewImageController.xib; sourceTree = "<group>"; };
+		390982BF23332C5B006F2697 /* SendMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMessageView.swift; sourceTree = "<group>"; };
+		390982C023332C5B006F2697 /* SendMessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendMessageView.xib; sourceTree = "<group>"; };
+		390982C323332C83006F2697 /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		390982C523332CF5006F2697 /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		390982C923332D0E006F2697 /* ChatLeftTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatLeftTVCell.xib; sourceTree = "<group>"; };
+		390982CA23332D0E006F2697 /* ChatRightTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatRightTVCell.xib; sourceTree = "<group>"; };
+		390982CB23332D0E006F2697 /* ChatRightTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRightTVCell.swift; sourceTree = "<group>"; };
+		390982CC23332D0E006F2697 /* ChatLeftTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatLeftTVCell.swift; sourceTree = "<group>"; };
+		390982D2233337AF006F2697 /* ListGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGroupViewController.swift; sourceTree = "<group>"; };
+		390982D423333809006F2697 /* ListGroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGroupTableViewCell.swift; sourceTree = "<group>"; };
+		390982D523333809006F2697 /* ListGroupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListGroupTableViewCell.xib; sourceTree = "<group>"; };
 		390C819522AA7850005799FE /* TamOcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamOcViewController.swift; sourceTree = "<group>"; };
 		390C819822AA78ED005799FE /* TamOcCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TamOcCollectionViewCell.swift; sourceTree = "<group>"; };
 		390C819922AA78ED005799FE /* TamOcCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TamOcCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -356,6 +378,7 @@
 		3904B30B2292A9A9004236F2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				390982BE23332C5B006F2697 /* SendMessageView */,
 				391B3E1F22E0331A0015DA61 /* FloatingButtonWindow.swift */,
 				393210082293992F00C09DE0 /* AlertCustomView */,
 				3904B2CE2292960C004236F2 /* HashTagView */,
@@ -366,6 +389,7 @@
 		3904B30C2292A9BC004236F2 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				390982C723332CFE006F2697 /* Chat */,
 				393210392293B0F400C09DE0 /* Gallery */,
 				393210362293AB1200C09DE0 /* ChildViewController */,
 				3904B2F52292A796004236F2 /* MenuViewController */,
@@ -392,6 +416,7 @@
 			isa = PBXGroup;
 			children = (
 				3904C7682282DC9000D3D057 /* Main.storyboard */,
+				390982C323332C83006F2697 /* Chat.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -466,6 +491,46 @@
 				3904C79A2282DCD400D3D057 /* PreviewImageController.xib */,
 			);
 			path = ManagerImage;
+			sourceTree = "<group>";
+		};
+		390982BE23332C5B006F2697 /* SendMessageView */ = {
+			isa = PBXGroup;
+			children = (
+				390982BF23332C5B006F2697 /* SendMessageView.swift */,
+				390982C023332C5B006F2697 /* SendMessageView.xib */,
+			);
+			path = SendMessageView;
+			sourceTree = "<group>";
+		};
+		390982C723332CFE006F2697 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				390982D12333378E006F2697 /* ListGroup */,
+				390982C523332CF5006F2697 /* ChatVC.swift */,
+				390982C823332D0E006F2697 /* ChatTVCell */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		390982C823332D0E006F2697 /* ChatTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				390982C923332D0E006F2697 /* ChatLeftTVCell.xib */,
+				390982CA23332D0E006F2697 /* ChatRightTVCell.xib */,
+				390982CB23332D0E006F2697 /* ChatRightTVCell.swift */,
+				390982CC23332D0E006F2697 /* ChatLeftTVCell.swift */,
+			);
+			path = ChatTVCell;
+			sourceTree = "<group>";
+		};
+		390982D12333378E006F2697 /* ListGroup */ = {
+			isa = PBXGroup;
+			children = (
+				390982D2233337AF006F2697 /* ListGroupViewController.swift */,
+				390982D423333809006F2697 /* ListGroupTableViewCell.swift */,
+				390982D523333809006F2697 /* ListGroupTableViewCell.xib */,
+			);
+			path = ListGroup;
 			sourceTree = "<group>";
 		};
 		390C819722AA78C8005799FE /* TamOc */ = {
@@ -747,10 +812,12 @@
 				393210522293BC4A00C09DE0 /* 8.jpg in Resources */,
 				3932101322939E6800C09DE0 /* ListItemViewController.xib in Resources */,
 				3904C7A12282DCD400D3D057 /* CropImageViewController.xib in Resources */,
+				390982C223332C5B006F2697 /* SendMessageView.xib in Resources */,
 				3904B2DA2292960C004236F2 /* HashTagListViewController.xib in Resources */,
 				3904C76F2282DC9300D3D057 /* LaunchScreen.storyboard in Resources */,
 				3932102922939F0D00C09DE0 /* FooterLoadMoreView.xib in Resources */,
 				393210472293BBE000C09DE0 /* 5.jpg in Resources */,
+				390982CE23332D0E006F2697 /* ChatRightTVCell.xib in Resources */,
 				390C819B22AA78ED005799FE /* TamOcCollectionViewCell.xib in Resources */,
 				3932101F22939EFE00C09DE0 /* LoadMoreView.xib in Resources */,
 				3932104A2293BBE000C09DE0 /* 4.jpg in Resources */,
@@ -759,8 +826,10 @@
 				3904B3082292A876004236F2 /* MyImageView.xib in Resources */,
 				393210342293A0DE00C09DE0 /* ListItemViewCell.xib in Resources */,
 				393210532293BC4A00C09DE0 /* 13.jpg in Resources */,
+				390982C423332C83006F2697 /* Chat.storyboard in Resources */,
 				393210562293BC4A00C09DE0 /* 14.jpg in Resources */,
 				393210402293B22000C09DE0 /* 2.jpg in Resources */,
+				390982D723333809006F2697 /* ListGroupTableViewCell.xib in Resources */,
 				3904B2DC2292960C004236F2 /* TagView.xib in Resources */,
 				3904C76C2282DC9300D3D057 /* Assets.xcassets in Resources */,
 				393210482293BBE000C09DE0 /* 6.jpg in Resources */,
@@ -774,6 +843,7 @@
 				3932103F2293B22000C09DE0 /* 1.jpg in Resources */,
 				393210572293BC4A00C09DE0 /* 11.jpg in Resources */,
 				393210582293BC4A00C09DE0 /* 10.jpg in Resources */,
+				390982CD23332D0E006F2697 /* ChatLeftTVCell.xib in Resources */,
 				3904B2FD2292A797004236F2 /* MenuTableViewCell.xib in Resources */,
 				3904B2D82292960C004236F2 /* TagViewCell.xib in Resources */,
 			);
@@ -870,10 +940,12 @@
 				393210102293992F00C09DE0 /* SCLExtensions.swift in Sources */,
 				3932103122939F6000C09DE0 /* PanDirectionGestureRecognizer.swift in Sources */,
 				3915980F228D689600152279 /* UIColor+Extension.swift in Sources */,
+				390982D623333809006F2697 /* ListGroupTableViewCell.swift in Sources */,
 				393210052293952E00C09DE0 /* NotiModel.swift in Sources */,
 				3915980B228D689600152279 /* ViewBase.swift in Sources */,
 				3932103B2293B13F00C09DE0 /* GalleryViewController.swift in Sources */,
 				3904B3032292A797004236F2 /* MenuViewController.swift in Sources */,
+				390982D3233337AF006F2697 /* ListGroupViewController.swift in Sources */,
 				3932102322939EFE00C09DE0 /* UIScrollView-Helper.swift in Sources */,
 				3904B3072292A876004236F2 /* MyImageView.swift in Sources */,
 				3904B2E62292A37B004236F2 /* BaseCollectionView.swift in Sources */,
@@ -883,6 +955,7 @@
 				3932101E22939EFE00C09DE0 /* EmptyView.swift in Sources */,
 				39159813228D689600152279 /* String+Extension.swift in Sources */,
 				3904B2DE22929A4E004236F2 /* MainViewController.swift in Sources */,
+				390982D023332D0E006F2697 /* ChatLeftTVCell.swift in Sources */,
 				3904B2D62292960C004236F2 /* TagItemLayout.swift in Sources */,
 				39159815228D689600152279 /* Date-Helper.swift in Sources */,
 				393210012293944400C09DE0 /* NetworkManager.swift in Sources */,
@@ -894,6 +967,7 @@
 				3932102122939EFE00C09DE0 /* LoadMoreView.swift in Sources */,
 				3904B2F12292A6B2004236F2 /* LoadingHelper.swift in Sources */,
 				3904C7672282DC9000D3D057 /* ViewController.swift in Sources */,
+				390982C123332C5B006F2697 /* SendMessageView.swift in Sources */,
 				3932103022939F6000C09DE0 /* PhotoGalleryCollectionViewCell.swift in Sources */,
 				391B3E2022E0331A0015DA61 /* FloatingButtonWindow.swift in Sources */,
 				39159807228D689600152279 /* UISliderX.swift in Sources */,
@@ -922,6 +996,7 @@
 				3915980E228D689600152279 /* UIButtonX.swift in Sources */,
 				39159803228D689600152279 /* UIViewXRadialGradient.swift in Sources */,
 				3932102A22939F0D00C09DE0 /* FooterLoadMoreView.swift in Sources */,
+				390982C623332CF5006F2697 /* ChatVC.swift in Sources */,
 				3915980C228D689600152279 /* UINavigation+Extension.swift in Sources */,
 				39159816228D689600152279 /* UIVisualEffectViewX.swift in Sources */,
 				3932102222939EFE00C09DE0 /* MyTableView.swift in Sources */,
@@ -929,6 +1004,7 @@
 				3932102822939F0D00C09DE0 /* MyCollectionView.swift in Sources */,
 				3904B2F22292A6B2004236F2 /* AppKey.swift in Sources */,
 				39159810228D689600152279 /* UITextViewX.swift in Sources */,
+				390982CF23332D0E006F2697 /* ChatRightTVCell.swift in Sources */,
 				3904B2FE2292A797004236F2 /* MenuHelper.swift in Sources */,
 				39159812228D689600152279 /* Double+Extension.swift in Sources */,
 				3932102022939EFE00C09DE0 /* MyTableViewCell.swift in Sources */,

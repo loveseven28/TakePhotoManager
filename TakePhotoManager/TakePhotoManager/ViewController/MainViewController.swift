@@ -48,8 +48,9 @@ class MainViewController: BaseViewController {
         self.present(self.menuVC, animated: true, completion:   nil)
     }
 
-    @IBAction func hashTagButtonTapped(_ sender: Any) {
-        
+    @IBAction func chatButtonTapped(_ sender: Any) {
+        let chatVC = UIStoryboard.chatViewController()
+        self.navigationController?.pushViewController(chatVC, animated: true)
     }
     
     @IBAction func accountKit(_ sender: UIButton) {

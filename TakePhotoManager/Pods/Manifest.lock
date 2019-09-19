@@ -64,6 +64,7 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (5.5.0):
     - GoogleUtilities/Logger
+  - GrowingTextView (0.6.1)
   - IQKeyboardManager (6.4.0)
   - Kingfisher (5.3.1)
   - MBProgressHUD (1.0.0)
@@ -84,6 +85,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Messaging
   - FSPagerView
+  - GrowingTextView (= 0.6.1)
   - IQKeyboardManager
   - Kingfisher
   - MBProgressHUD (= 1.0.0)
@@ -107,6 +109,7 @@ SPEC REPOS:
     - FSPagerView
     - GoogleAppMeasurement
     - GoogleUtilities
+    - GrowingTextView
     - IQKeyboardManager
     - Kingfisher
     - MBProgressHUD
@@ -131,6 +134,7 @@ SPEC CHECKSUMS:
   FSPagerView: 816a18842306973cc7cc6df8a5332272f7815c30
   GoogleAppMeasurement: 1624046ab1bcc5e170061a56ef5679000b079c8e
   GoogleUtilities: 6481e6318c5fcabaaa8513ef8120f329055d7c10
+  GrowingTextView: 335aefa45df7df06b01edede1363414d6ee5d6bc
   IQKeyboardManager: fcef267266379c003181fc3592f6bdb8bf4db839
   Kingfisher: d9e7e0b209b59b8f9873aa2f37654e81a7beea51
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
@@ -140,6 +144,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   Whisper: 169760fc4bab0abf24d5529f9276f95c25cf1025
 
-PODFILE CHECKSUM: 80aefd4adeb7a9e935064acf84d7c7db713e89f7
+PODFILE CHECKSUM: 96c9415e4db8bf6dc4a72de49bd2c93305ed24ad
 
 COCOAPODS: 1.7.5

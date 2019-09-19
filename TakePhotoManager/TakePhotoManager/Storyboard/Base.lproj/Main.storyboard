@@ -96,12 +96,26 @@
                                     <action selector="accountKit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vjD-ht-D5X"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxi-4n-gwA">
+                                <rect key="frame" x="0.0" y="376" width="414" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.59999999999999998" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="TfO-mc-SVZ"/>
+                                </constraints>
+                                <state key="normal" title="Chat">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="chatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yJn-HR-ey4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cVm-Fv-NlK" firstAttribute="top" secondItem="HEc-Nj-8IP" secondAttribute="bottom" constant="8" id="1me-Cp-N1p"/>
                             <constraint firstItem="1CF-pw-EI2" firstAttribute="top" secondItem="usR-ky-7bO" secondAttribute="bottom" constant="8" id="4Tg-gd-z7E"/>
                             <constraint firstItem="c0T-A0-Xmi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5aX-Io-aOJ"/>
+                            <constraint firstItem="rxi-4n-gwA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CWA-2u-8e1"/>
                             <constraint firstItem="RRq-XP-QkW" firstAttribute="top" secondItem="c0T-A0-Xmi" secondAttribute="bottom" constant="8" id="DQW-sO-xHc"/>
                             <constraint firstItem="HEc-Nj-8IP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="E90-eQ-hUc"/>
                             <constraint firstItem="HEc-Nj-8IP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HwL-Au-057"/>
@@ -109,9 +123,11 @@
                             <constraint firstItem="usR-ky-7bO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UNa-6k-acr"/>
                             <constraint firstItem="cVm-Fv-NlK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WUL-Sb-dFy"/>
                             <constraint firstItem="1CF-pw-EI2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hgS-5A-OhA"/>
+                            <constraint firstItem="rxi-4n-gwA" firstAttribute="top" secondItem="RRq-XP-QkW" secondAttribute="bottom" constant="8" id="hpf-qL-fiy"/>
                             <constraint firstItem="HEc-Nj-8IP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jBC-Ds-VeC"/>
                             <constraint firstItem="c0T-A0-Xmi" firstAttribute="top" secondItem="1CF-pw-EI2" secondAttribute="bottom" constant="8" id="nPZ-Af-BFj"/>
                             <constraint firstItem="RRq-XP-QkW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pOj-rQ-Hdq"/>
+                            <constraint firstItem="rxi-4n-gwA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rMM-0U-LFJ"/>
                             <constraint firstItem="1CF-pw-EI2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="s9p-oy-TsF"/>
                             <constraint firstItem="cVm-Fv-NlK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uNF-qi-RuD"/>
                             <constraint firstItem="RRq-XP-QkW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uQj-Tx-7xj"/>
