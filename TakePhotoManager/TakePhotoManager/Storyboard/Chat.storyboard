@@ -13,12 +13,12 @@
         <!--Name User-->
         <scene sceneID="xNp-jD-A6N">
             <objects>
-                <viewController storyboardIdentifier="ChatVC" hidesBottomBarWhenPushed="YES" id="SV7-l3-BfR" customClass="ChatVC" customModule="AppChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChatVC" hidesBottomBarWhenPushed="YES" id="SV7-l3-BfR" customClass="ChatVC" customModule="TakePhotoManager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l6x-K9-Auk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDn-Wb-iEN" customClass="SendMessageView" customModule="AppChat" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDn-Wb-iEN" customClass="SendMessageView" customModule="TakePhotoManager" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="718" width="414" height="56"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -120,6 +120,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f5a-9t-hIo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="306" y="115"/>
+        </scene>
+        <!--List Video View Controller-->
+        <scene sceneID="ShY-Yy-RBM">
+            <objects>
+                <viewController storyboardIdentifier="ListVideoViewController" id="8Xj-CC-Y8A" customClass="ListVideoViewController" customModule="TakePhotoManager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qTC-Co-VU3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lep-2a-XJ6">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lep-2a-XJ6" firstAttribute="top" secondItem="bhD-EI-RqY" secondAttribute="top" id="B90-cd-RPF"/>
+                            <constraint firstItem="Lep-2a-XJ6" firstAttribute="leading" secondItem="bhD-EI-RqY" secondAttribute="leading" id="FC9-Dd-ukr"/>
+                            <constraint firstItem="bhD-EI-RqY" firstAttribute="trailing" secondItem="Lep-2a-XJ6" secondAttribute="trailing" id="LZ5-x1-meh"/>
+                            <constraint firstItem="bhD-EI-RqY" firstAttribute="bottom" secondItem="Lep-2a-XJ6" secondAttribute="bottom" id="o5Q-fB-KHx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bhD-EI-RqY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Lep-2a-XJ6" id="g9T-Ca-lyj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rG1-w1-nVe" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2770" y="105"/>
         </scene>
     </scenes>
     <resources>

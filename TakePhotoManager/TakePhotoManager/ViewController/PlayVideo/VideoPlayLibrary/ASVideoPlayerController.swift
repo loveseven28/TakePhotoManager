@@ -124,6 +124,11 @@ class ASVideoPlayerController: NSObject, NSCacheDelegate {
         }
     }
     
+    func stopVideo() {
+        currentVideoContainer()?.player.pause()
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     func removeLayerFor(cell: ASAutoPlayVideoLayerContainer) {
         if let url = cell.videoURL {
             removeFromSuperLayer(layer: cell.videoLayer, url: url)
@@ -151,7 +156,7 @@ class ASVideoPlayerController: NSObject, NSCacheDelegate {
                 return
         }
         if let currentItem = currentPlayer.currentItem, currentItem == playerItem {
-            currentPlayer.seek(to: kCMTimeZero)
+            currentPlayer.seek(to: CMTime.zero)
             currentPlayer.play()
         }
     }
@@ -252,9 +257,9 @@ class ASVideoPlayerController: NSObject, NSCacheDelegate {
              Handle `NSNull` value for `NSKeyValueChangeNewKey`, i.e. when
              `player.currentItem` is nil.
              */
-            let newStatus: AVPlayerItemStatus
+            let newStatus: AVPlayerItem.Status
             if let newStatusAsNumber = change?[NSKeyValueChangeKey.newKey] as? NSNumber {
-                newStatus = AVPlayerItemStatus(rawValue: newStatusAsNumber.intValue)!
+                newStatus = AVPlayerItem.Status(rawValue: newStatusAsNumber.intValue)!
                 if newStatus == .readyToPlay {
                     guard let item = object as? AVPlayerItem,
                         let currentItem = currentVideoContainer()?.player.currentItem else {

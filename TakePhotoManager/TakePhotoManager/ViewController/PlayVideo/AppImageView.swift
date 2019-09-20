@@ -47,7 +47,7 @@ extension UIImageView {
                         return
                     }
                     let animation = CATransition()
-                    animation.type = kCATransitionFade
+                    animation.type = CATransitionType.fade
                     animation.duration = 0.3
                     self?.layer.add(animation, forKey: "transition")
                     self?.image = fetchedImage

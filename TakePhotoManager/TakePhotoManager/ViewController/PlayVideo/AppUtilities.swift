@@ -16,7 +16,7 @@ class AppUtilities: NSObject {
         return NSString(string: string).boundingRect(with: CGSize(width: width,
                                                                   height: Double.greatestFiniteMagnitude),
                                                              options: NSStringDrawingOptions.usesLineFragmentOrigin,
-                                                             attributes: [NSAttributedStringKey.font: font],
+                                                             attributes: [NSAttributedString.Key.font: font],
                                                              context: nil).size
     }
 }

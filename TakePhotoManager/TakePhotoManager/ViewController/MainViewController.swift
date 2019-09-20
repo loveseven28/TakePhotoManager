@@ -53,6 +53,12 @@ class MainViewController: BaseViewController {
         self.navigationController?.pushViewController(chatVC, animated: true)
     }
     
+    @IBAction func videoButtonTapped(_ sender: Any) {
+        let vc = UIStoryboard.videoViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
     @IBAction func accountKit(_ sender: UIButton) {
         self.validateSMS(phoneNumber: "0909921679")
     }
@@ -109,7 +115,7 @@ extension MainViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
-//            print("New location is \(location)")
+            print("New location is \(location)")
         }
     }
 }

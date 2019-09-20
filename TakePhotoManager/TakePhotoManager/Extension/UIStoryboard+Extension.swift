@@ -19,5 +19,8 @@ extension UIStoryboard {
         return UIStoryboard(name: "Chat", bundle: nil).instantiateViewController(withIdentifier: ChatVC.nib) as! ChatVC
     }
     
+    class func videoViewController() -> ListVideoViewController {
+        return UIStoryboard(name: "Chat", bundle: nil).instantiateViewController(withIdentifier: ListVideoViewController.nib) as! ListVideoViewController
+    }
     
 }
