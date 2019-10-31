@@ -68,6 +68,7 @@ class ListVideoViewController: BaseViewController, UITableViewDelegate, UITableV
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         ASVideoPlayerController.sharedVideoPlayer.stopVideo()
+//        pausePlayeVideos()
     }
     
     override func viewWillAppear(_ animated: Bool) {

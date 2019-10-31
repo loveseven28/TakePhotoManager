@@ -125,7 +125,16 @@ class ASVideoPlayerController: NSObject, NSCacheDelegate {
     }
     
     func stopVideo() {
-        currentVideoContainer()?.player.pause()
+        if let videoContainer = self.videoCache.object(forKey: videoURL! as NSString) {
+            videoContainer.playOn = false
+            removeObserverFor(url: videoURL!)
+        }
+        videoURL = nil
+        if let _ = currentLayer {
+            currentLayer!.removeFromSuperlayer()
+            currentLayer = nil
+        }
+        
         NotificationCenter.default.removeObserver(self)
     }
     

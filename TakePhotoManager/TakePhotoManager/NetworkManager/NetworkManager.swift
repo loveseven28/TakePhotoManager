@@ -64,13 +64,17 @@ class NetworkManager:SwiftDecoder {
         if let token = SettingsApp.token {
             headers["Authorization"] =  "Bearer " + token
         }
+        print(headers)
         return headers
     }
     
     func myRequest(router: APIRouter,completionBlock:@escaping (_ data: Any?, Error?)->()) {
+        print(router.path)
+        print(router.method)
+        print(router.method)
+        print(router.params?.json() ?? "")
         request(router).responseJSON {[weak self] (response) in
             guard let `self` = self else { return }
-            
             let rs = self.handleStatusCodeValidation(response)
             switch rs {
             case .failure(let error):
