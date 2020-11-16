@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F124CEE2562DA1600C3123F /* CustomTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F124CEC2562DA1600C3123F /* CustomTextView.xib */; };
+		1F124CEF2562DA1600C3123F /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F124CED2562DA1600C3123F /* CustomTextView.swift */; };
 		32389735D049B8015C05B084 /* Pods_TakePhotoManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB4176D71C66B7808BD508E /* Pods_TakePhotoManager.framework */; };
 		3904B2D62292960C004236F2 /* TagItemLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2CF2292960C004236F2 /* TagItemLayout.swift */; };
 		3904B2D72292960C004236F2 /* HashTagListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2D02292960C004236F2 /* HashTagListViewController.swift */; };
@@ -162,6 +164,8 @@
 
 /* Begin PBXFileReference section */
 		182E7BC2DD1BBC8812B4FC43 /* Pods-TakePhotoManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakePhotoManager.debug.xcconfig"; path = "Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager.debug.xcconfig"; sourceTree = "<group>"; };
+		1F124CEC2562DA1600C3123F /* CustomTextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTextView.xib; sourceTree = "<group>"; };
+		1F124CED2562DA1600C3123F /* CustomTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		3904B2CF2292960C004236F2 /* TagItemLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagItemLayout.swift; sourceTree = "<group>"; };
 		3904B2D02292960C004236F2 /* HashTagListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HashTagListViewController.swift; sourceTree = "<group>"; };
 		3904B2D12292960C004236F2 /* TagViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagViewCell.xib; sourceTree = "<group>"; };
@@ -331,6 +335,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F124CEB2562DA1600C3123F /* CustomTextView */ = {
+			isa = PBXGroup;
+			children = (
+				1F124CEC2562DA1600C3123F /* CustomTextView.xib */,
+				1F124CED2562DA1600C3123F /* CustomTextView.swift */,
+			);
+			path = CustomTextView;
+			sourceTree = "<group>";
+		};
 		3904B2CE2292960C004236F2 /* HashTagView */ = {
 			isa = PBXGroup;
 			children = (
@@ -398,6 +411,7 @@
 		3904B30B2292A9A9004236F2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1F124CEB2562DA1600C3123F /* CustomTextView */,
 				3993B8F5233481A700174C96 /* OEUHeaderView.swift */,
 				3993B8F6233481A700174C96 /* OEUHeaderView.xib */,
 				390982BE23332C5B006F2697 /* SendMessageView */,
@@ -893,6 +907,7 @@
 				393210582293BC4A00C09DE0 /* 10.jpg in Resources */,
 				390982CD23332D0E006F2697 /* ChatLeftTVCell.xib in Resources */,
 				3904B2FD2292A797004236F2 /* MenuTableViewCell.xib in Resources */,
+				1F124CEE2562DA1600C3123F /* CustomTextView.xib in Resources */,
 				3904B2D82292960C004236F2 /* TagViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1060,6 +1075,7 @@
 				3904B2F22292A6B2004236F2 /* AppKey.swift in Sources */,
 				39159810228D689600152279 /* UITextViewX.swift in Sources */,
 				390982CF23332D0E006F2697 /* ChatRightTVCell.swift in Sources */,
+				1F124CEF2562DA1600C3123F /* CustomTextView.swift in Sources */,
 				3904B2FE2292A797004236F2 /* MenuHelper.swift in Sources */,
 				3993B9162334C7BA00174C96 /* AppUtilities.swift in Sources */,
 				39159812228D689600152279 /* Double+Extension.swift in Sources */,
