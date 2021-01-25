@@ -117,7 +117,7 @@ open class WhistleFactory: UIViewController {
         NSString(string: text).boundingRect(
           with: CGSize(width: labelWidth, height: CGFloat.infinity),
           options: NSStringDrawingOptions.usesLineFragmentOrigin,
-          attributes: [NSAttributedString.Key.font: titleLabel.font ?? ""],
+          attributes: [NSAttributedStringKey.font: titleLabel.font],
           context: nil
         )
       titleLabelHeight = CGFloat(neededDimensions.size.height)
@@ -172,7 +172,7 @@ open class WhistleFactory: UIViewController {
       }, completion: { _ in
         if let window = self.previousKeyWindow {
           window.isHidden = false
-            self.whistleWindow.windowLevel = UIWindowLevelNormal - 1
+          self.whistleWindow.windowLevel = UIWindowLevelNormal - 1
           self.previousKeyWindow = nil
           window.rootViewController?.setNeedsStatusBarAppearanceUpdate()
         }

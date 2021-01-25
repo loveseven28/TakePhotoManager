@@ -11,6 +11,8 @@ import UserNotifications
 import Reachability
 import Firebase
 import UserNotifications
+import FBSDKLoginKit
+import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -33,7 +35,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let launch = launchOptions , let userInfo = launch[UIApplication.LaunchOptionsKey.remoteNotification] {
             handleNotification(userInfo: userInfo as! [AnyHashable : Any], application: application)
         }
+        ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
         return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        return ApplicationDelegate.shared.application(app, open: url, options: options)
     }
 
     fileprivate func setupNavigationBar(){

@@ -16,7 +16,7 @@ enum AppKey: String {
     case kDisplayName     = "kDisplayName"
     case kPhoneNumber     = "kPhoneNumber"
     case emailContact     = "gopy@dongtam.com.vn"
-    case GoogleKey        = "AIzaSyCU0snpPPOVPOkL3J9N5fcjMzQ1aOYPxOs"
+    case GoogleKey        = "307825015364-eee5paegbt02r1okfaea8ua1njbfj8nk.apps.googleusercontent.com"
 }
 
 

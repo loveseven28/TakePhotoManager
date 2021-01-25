@@ -84,7 +84,10 @@ class AttachmentHandler: NSObject{
         }))
         
         actionSheet.addAction(UIAlertAction(title: Constants.cancelBtnTitle, style: .cancel, handler: nil))
-        
+        if let popoverPresentationController = actionSheet.popoverPresentationController {
+            popoverPresentationController.sourceView = self.currentVC!.view
+            popoverPresentationController.sourceRect = CGRect(x: self.currentVC!.view.frame.origin.x, y: self.currentVC!.view.frame.origin.y, width: 200, height: 300)
+        }
         vc.present(actionSheet, animated: true, completion: nil)
     }
     

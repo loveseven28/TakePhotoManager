@@ -73,10 +73,8 @@ class MainViewController: BaseViewController {
         attrs.append(msg)
         attrs.append(name)
         
-        let label: UILabel = UILabel(frame: CGRect(x: 20, y: 20, width: 200, height: 20))
-        label.attributedText = attrs
-        
-        label.center = view.center
+        let label: UILabel = UILabel(frame: CGRect(x: UIScreen.main.bounds.width / 2 - 100, y: tamOcButton.frame.origin.y + 40, width: 200, height: 20))
+        label.attributedText = attrs        
         view.addSubview(label)
     }
     

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1F124CEE2562DA1600C3123F /* CustomTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F124CEC2562DA1600C3123F /* CustomTextView.xib */; };
 		1F124CEF2562DA1600C3123F /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F124CED2562DA1600C3123F /* CustomTextView.swift */; };
-		32389735D049B8015C05B084 /* Pods_TakePhotoManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB4176D71C66B7808BD508E /* Pods_TakePhotoManager.framework */; };
 		3904B2D62292960C004236F2 /* TagItemLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2CF2292960C004236F2 /* TagItemLayout.swift */; };
 		3904B2D72292960C004236F2 /* HashTagListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3904B2D02292960C004236F2 /* HashTagListViewController.swift */; };
 		3904B2D82292960C004236F2 /* TagViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3904B2D12292960C004236F2 /* TagViewCell.xib */; };
@@ -143,6 +142,31 @@
 		3993B9172334C7BA00174C96 /* ShotTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3993B9132334C7B900174C96 /* ShotTableViewCell.swift */; };
 		3993B9182334C7BA00174C96 /* AppImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3993B9142334C7B900174C96 /* AppImageView.swift */; };
 		3993B9192334C7BA00174C96 /* ShotTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3993B9152334C7BA00174C96 /* ShotTableViewCell.xib */; };
+		58784CC68663AC67E37190C0 /* Pods_TakePhotoManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B3BB7BB1587DF6F5E865DF /* Pods_TakePhotoManager.framework */; };
+		E02DC1C225B91BBB004D6423 /* SocialDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02DC1C025B91BBA004D6423 /* SocialDelegate.swift */; };
+		E02DC1C325B91BBB004D6423 /* ResponseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02DC1C125B91BBB004D6423 /* ResponseDelegate.swift */; };
+		E02DC1CC25B91C66004D6423 /* FirebaseAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02DC1CA25B91C65004D6423 /* FirebaseAuthenticator.swift */; };
+		E02DC1CD25B91C66004D6423 /* SocialAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02DC1CB25B91C66004D6423 /* SocialAuthenticator.swift */; };
+		E02DC22325B92625004D6423 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E02DC22225B92625004D6423 /* GoogleService-Info.plist */; };
+		E03D5E4A25B833D4004DD36D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03D5E4925B833D4004DD36D /* LoginViewController.swift */; };
+		E03D5E5225B833F0004DD36D /* LoginSocialManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03D5E5125B833F0004DD36D /* LoginSocialManager.swift */; };
+		E04F695C25BA6A16008DC422 /* CritterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F694B25BA6A16008DC422 /* CritterView.swift */; };
+		E04F695D25BA6A16008DC422 /* CritterAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F694C25BA6A16008DC422 /* CritterAssets.swift */; };
+		E04F695E25BA6A16008DC422 /* CritterAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F694D25BA6A16008DC422 /* CritterAnimatable.swift */; };
+		E04F695F25BA6A16008DC422 /* RightEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F694F25BA6A16008DC422 /* RightEye.swift */; };
+		E04F696025BA6A16008DC422 /* LeftEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F695025BA6A16008DC422 /* LeftEye.swift */; };
+		E04F696125BA6A16008DC422 /* Mouth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F695125BA6A16008DC422 /* Mouth.swift */; };
+		E04F696225BA6A16008DC422 /* Nose.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F695225BA6A16008DC422 /* Nose.swift */; };
+		E04F696325BA6A16008DC422 /* RightEarMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F695325BA6A16008DC422 /* RightEarMask.swift */; };
+		E04F696425BA6A16008DC422 /* Head.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F695425BA6A16008DC422 /* Head.swift */; };
+		E04F696525BA6A16008DC422 /* RightArm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F695525BA6A16008DC422 /* RightArm.swift */; };
+		E04F696625BA6A16008DC422 /* LeftEarMask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F695625BA6A16008DC422 /* LeftEarMask.swift */; };
+		E04F696725BA6A16008DC422 /* Muzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F695725BA6A16008DC422 /* Muzzle.swift */; };
+		E04F696825BA6A16008DC422 /* LeftArm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F695825BA6A16008DC422 /* LeftArm.swift */; };
+		E04F696925BA6A16008DC422 /* LeftEar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F695925BA6A16008DC422 /* LeftEar.swift */; };
+		E04F696A25BA6A16008DC422 /* Body.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F695A25BA6A16008DC422 /* Body.swift */; };
+		E04F696B25BA6A16008DC422 /* RightEar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F695B25BA6A16008DC422 /* RightEar.swift */; };
+		E04F697325BA738E008DC422 /* CATransform3D+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E04F697225BA738E008DC422 /* CATransform3D+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,7 +187,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		182E7BC2DD1BBC8812B4FC43 /* Pods-TakePhotoManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakePhotoManager.debug.xcconfig"; path = "Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager.debug.xcconfig"; sourceTree = "<group>"; };
 		1F124CEC2562DA1600C3123F /* CustomTextView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTextView.xib; sourceTree = "<group>"; };
 		1F124CED2562DA1600C3123F /* CustomTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		3904B2CF2292960C004236F2 /* TagItemLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagItemLayout.swift; sourceTree = "<group>"; };
@@ -305,8 +328,34 @@
 		3993B9132334C7B900174C96 /* ShotTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotTableViewCell.swift; sourceTree = "<group>"; };
 		3993B9142334C7B900174C96 /* AppImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppImageView.swift; sourceTree = "<group>"; };
 		3993B9152334C7BA00174C96 /* ShotTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShotTableViewCell.xib; sourceTree = "<group>"; };
-		DD07B9C6A24BF4D645753B3D /* Pods-TakePhotoManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakePhotoManager.release.xcconfig"; path = "Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager.release.xcconfig"; sourceTree = "<group>"; };
-		EEB4176D71C66B7808BD508E /* Pods_TakePhotoManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakePhotoManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41B3BB7BB1587DF6F5E865DF /* Pods_TakePhotoManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TakePhotoManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0D017A806934F6F43741E05 /* Pods-TakePhotoManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakePhotoManager.release.xcconfig"; path = "Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager.release.xcconfig"; sourceTree = "<group>"; };
+		ACE2F6BD43C6A8BC677B0309 /* Pods-TakePhotoManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TakePhotoManager.debug.xcconfig"; path = "Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager.debug.xcconfig"; sourceTree = "<group>"; };
+		E02DC1C025B91BBA004D6423 /* SocialDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialDelegate.swift; sourceTree = "<group>"; };
+		E02DC1C125B91BBB004D6423 /* ResponseDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseDelegate.swift; sourceTree = "<group>"; };
+		E02DC1CA25B91C65004D6423 /* FirebaseAuthenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAuthenticator.swift; sourceTree = "<group>"; };
+		E02DC1CB25B91C66004D6423 /* SocialAuthenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialAuthenticator.swift; sourceTree = "<group>"; };
+		E02DC22225B92625004D6423 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E03D5E4925B833D4004DD36D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E03D5E5125B833F0004DD36D /* LoginSocialManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSocialManager.swift; sourceTree = "<group>"; };
+		E04F694B25BA6A16008DC422 /* CritterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CritterView.swift; sourceTree = "<group>"; };
+		E04F694C25BA6A16008DC422 /* CritterAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CritterAssets.swift; sourceTree = "<group>"; };
+		E04F694D25BA6A16008DC422 /* CritterAnimatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CritterAnimatable.swift; sourceTree = "<group>"; };
+		E04F694F25BA6A16008DC422 /* RightEye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightEye.swift; sourceTree = "<group>"; };
+		E04F695025BA6A16008DC422 /* LeftEye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftEye.swift; sourceTree = "<group>"; };
+		E04F695125BA6A16008DC422 /* Mouth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mouth.swift; sourceTree = "<group>"; };
+		E04F695225BA6A16008DC422 /* Nose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nose.swift; sourceTree = "<group>"; };
+		E04F695325BA6A16008DC422 /* RightEarMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightEarMask.swift; sourceTree = "<group>"; };
+		E04F695425BA6A16008DC422 /* Head.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Head.swift; sourceTree = "<group>"; };
+		E04F695525BA6A16008DC422 /* RightArm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightArm.swift; sourceTree = "<group>"; };
+		E04F695625BA6A16008DC422 /* LeftEarMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftEarMask.swift; sourceTree = "<group>"; };
+		E04F695725BA6A16008DC422 /* Muzzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Muzzle.swift; sourceTree = "<group>"; };
+		E04F695825BA6A16008DC422 /* LeftArm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftArm.swift; sourceTree = "<group>"; };
+		E04F695925BA6A16008DC422 /* LeftEar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftEar.swift; sourceTree = "<group>"; };
+		E04F695A25BA6A16008DC422 /* Body.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Body.swift; sourceTree = "<group>"; };
+		E04F695B25BA6A16008DC422 /* RightEar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightEar.swift; sourceTree = "<group>"; };
+		E04F697225BA738E008DC422 /* CATransform3D+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CATransform3D+Ext.swift"; sourceTree = "<group>"; };
+		E05F5C3525B9685500E62218 /* TakePhotoManager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TakePhotoManager.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,7 +363,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32389735D049B8015C05B084 /* Pods_TakePhotoManager.framework in Frameworks */,
+				58784CC68663AC67E37190C0 /* Pods_TakePhotoManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +474,7 @@
 		3904B30C2292A9BC004236F2 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E03D5E4825B833B4004DD36D /* LoginSocial */,
 				3993B8F92334940B00174C96 /* PlayVideo */,
 				390982C723332CFE006F2697 /* Chat */,
 				393210392293B0F400C09DE0 /* Gallery */,
@@ -466,7 +516,7 @@
 				3904C7832282DC9300D3D057 /* TakePhotoManagerUITests */,
 				3904C7622282DC9000D3D057 /* Products */,
 				EBE7B8369541BFFE506B5A85 /* Pods */,
-				51AAEB1167C8143A437173D5 /* Frameworks */,
+				F0475C0F44BB30B9F6688566 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -483,6 +533,7 @@
 		3904C7632282DC9000D3D057 /* TakePhotoManager */ = {
 			isa = PBXGroup;
 			children = (
+				E05F5C3525B9685500E62218 /* TakePhotoManager.entitlements */,
 				39320FFA2293941400C09DE0 /* NetworkManager */,
 				393210032293950F00C09DE0 /* Model */,
 				3904B30E2292B23A004236F2 /* Storyboard */,
@@ -583,6 +634,7 @@
 		391597EA228D687C00152279 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E04F697225BA738E008DC422 /* CATransform3D+Ext.swift */,
 				392828D623176CB3007DADD0 /* AccountKitHelper.swift */,
 				3904C7922282DCD400D3D057 /* ManagerImage */,
 				391597F7228D689500152279 /* BadgeButton+Extension.swift */,
@@ -740,21 +792,67 @@
 			path = VideoPlayLibrary;
 			sourceTree = "<group>";
 		};
-		51AAEB1167C8143A437173D5 /* Frameworks */ = {
+		E03D5E4825B833B4004DD36D /* LoginSocial */ = {
 			isa = PBXGroup;
 			children = (
-				EEB4176D71C66B7808BD508E /* Pods_TakePhotoManager.framework */,
+				E04F694A25BA6A16008DC422 /* Critter Module */,
+				E03D5E4925B833D4004DD36D /* LoginViewController.swift */,
+				E03D5E5125B833F0004DD36D /* LoginSocialManager.swift */,
+				E02DC1C125B91BBB004D6423 /* ResponseDelegate.swift */,
+				E02DC1C025B91BBA004D6423 /* SocialDelegate.swift */,
+				E02DC1CA25B91C65004D6423 /* FirebaseAuthenticator.swift */,
+				E02DC1CB25B91C66004D6423 /* SocialAuthenticator.swift */,
+				E02DC22225B92625004D6423 /* GoogleService-Info.plist */,
 			);
-			name = Frameworks;
+			path = LoginSocial;
+			sourceTree = "<group>";
+		};
+		E04F694A25BA6A16008DC422 /* Critter Module */ = {
+			isa = PBXGroup;
+			children = (
+				E04F694B25BA6A16008DC422 /* CritterView.swift */,
+				E04F694C25BA6A16008DC422 /* CritterAssets.swift */,
+				E04F694D25BA6A16008DC422 /* CritterAnimatable.swift */,
+				E04F694E25BA6A16008DC422 /* Parts */,
+			);
+			path = "Critter Module";
+			sourceTree = "<group>";
+		};
+		E04F694E25BA6A16008DC422 /* Parts */ = {
+			isa = PBXGroup;
+			children = (
+				E04F694F25BA6A16008DC422 /* RightEye.swift */,
+				E04F695025BA6A16008DC422 /* LeftEye.swift */,
+				E04F695125BA6A16008DC422 /* Mouth.swift */,
+				E04F695225BA6A16008DC422 /* Nose.swift */,
+				E04F695325BA6A16008DC422 /* RightEarMask.swift */,
+				E04F695425BA6A16008DC422 /* Head.swift */,
+				E04F695525BA6A16008DC422 /* RightArm.swift */,
+				E04F695625BA6A16008DC422 /* LeftEarMask.swift */,
+				E04F695725BA6A16008DC422 /* Muzzle.swift */,
+				E04F695825BA6A16008DC422 /* LeftArm.swift */,
+				E04F695925BA6A16008DC422 /* LeftEar.swift */,
+				E04F695A25BA6A16008DC422 /* Body.swift */,
+				E04F695B25BA6A16008DC422 /* RightEar.swift */,
+			);
+			path = Parts;
 			sourceTree = "<group>";
 		};
 		EBE7B8369541BFFE506B5A85 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				182E7BC2DD1BBC8812B4FC43 /* Pods-TakePhotoManager.debug.xcconfig */,
-				DD07B9C6A24BF4D645753B3D /* Pods-TakePhotoManager.release.xcconfig */,
+				ACE2F6BD43C6A8BC677B0309 /* Pods-TakePhotoManager.debug.xcconfig */,
+				A0D017A806934F6F43741E05 /* Pods-TakePhotoManager.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F0475C0F44BB30B9F6688566 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				41B3BB7BB1587DF6F5E865DF /* Pods_TakePhotoManager.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -764,12 +862,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3904C7892282DC9300D3D057 /* Build configuration list for PBXNativeTarget "TakePhotoManager" */;
 			buildPhases = (
-				06414C2B8A072C1F730A73EB /* [CP] Check Pods Manifest.lock */,
+				E7F189A18EE0BCBE48EE9FAB /* [CP] Check Pods Manifest.lock */,
 				3904C75D2282DC9000D3D057 /* Sources */,
 				3904C75E2282DC9000D3D057 /* Frameworks */,
 				3904C75F2282DC9000D3D057 /* Resources */,
-				62E71A2E3A2D243AC20E0F3C /* [CP] Embed Pods Frameworks */,
-				6C4EB18397116E6ACBECC5CC /* [CP] Copy Pods Resources */,
+				26385358ED5C18F4F467B863 /* [CP] Embed Pods Frameworks */,
+				5E498C20C15F2D2298B11D36 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -823,7 +921,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = DangHung;
 				TargetAttributes = {
 					3904C7602282DC9000D3D057 = {
@@ -908,6 +1006,7 @@
 				390982CD23332D0E006F2697 /* ChatLeftTVCell.xib in Resources */,
 				3904B2FD2292A797004236F2 /* MenuTableViewCell.xib in Resources */,
 				1F124CEE2562DA1600C3123F /* CustomTextView.xib in Resources */,
+				E02DC22325B92625004D6423 /* GoogleService-Info.plist in Resources */,
 				3904B2D82292960C004236F2 /* TagViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -929,7 +1028,41 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		06414C2B8A072C1F730A73EB /* [CP] Check Pods Manifest.lock */ = {
+		26385358ED5C18F4F467B863 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E498C20C15F2D2298B11D36 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7F189A18EE0BCBE48EE9FAB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -951,40 +1084,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		62E71A2E3A2D243AC20E0F3C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6C4EB18397116E6ACBECC5CC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TakePhotoManager/Pods-TakePhotoManager-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -993,15 +1092,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				39159809228D689600152279 /* UIViewAnchorPoint.swift in Sources */,
+				E04F696725BA6A16008DC422 /* Muzzle.swift in Sources */,
 				3904B2F02292A6B2004236F2 /* AppColor.swift in Sources */,
 				392828D723176CB3007DADD0 /* AccountKitHelper.swift in Sources */,
 				39159805228D689600152279 /* UITextFieldX.swift in Sources */,
 				3904C79D2282DCD400D3D057 /* PreviewImageController.swift in Sources */,
+				E02DC1C225B91BBB004D6423 /* SocialDelegate.swift in Sources */,
 				3904B2F42292A6B2004236F2 /* AppFont.swift in Sources */,
 				39136AEF22C1BDEB00D942B8 /* AttachmentHandler.swift in Sources */,
+				E04F696A25BA6A16008DC422 /* Body.swift in Sources */,
+				E02DC1C325B91BBB004D6423 /* ResponseDelegate.swift in Sources */,
 				393210022293944400C09DE0 /* BaseAPI.swift in Sources */,
 				393210102293992F00C09DE0 /* SCLExtensions.swift in Sources */,
 				3932103122939F6000C09DE0 /* PanDirectionGestureRecognizer.swift in Sources */,
+				E04F696225BA6A16008DC422 /* Nose.swift in Sources */,
 				3915980F228D689600152279 /* UIColor+Extension.swift in Sources */,
 				390982D623333809006F2697 /* ListGroupTableViewCell.swift in Sources */,
 				393210052293952E00C09DE0 /* NotiModel.swift in Sources */,
@@ -1010,6 +1114,7 @@
 				3904B3032292A797004236F2 /* MenuViewController.swift in Sources */,
 				390982D3233337AF006F2697 /* ListGroupViewController.swift in Sources */,
 				3932102322939EFE00C09DE0 /* UIScrollView-Helper.swift in Sources */,
+				E03D5E5225B833F0004DD36D /* LoginSocialManager.swift in Sources */,
 				3904B3072292A876004236F2 /* MyImageView.swift in Sources */,
 				3904B2E62292A37B004236F2 /* BaseCollectionView.swift in Sources */,
 				3932101422939E6800C09DE0 /* ListItemViewController.swift in Sources */,
@@ -1023,6 +1128,7 @@
 				3993B9102334C7A200174C96 /* ASVideoPlayerController.swift in Sources */,
 				3993B90F2334C7A200174C96 /* ASVideoLayerObject.swift in Sources */,
 				3904B2D62292960C004236F2 /* TagItemLayout.swift in Sources */,
+				E04F696125BA6A16008DC422 /* Mouth.swift in Sources */,
 				39159815228D689600152279 /* Date-Helper.swift in Sources */,
 				3993B9182334C7BA00174C96 /* AppImageView.swift in Sources */,
 				393210012293944400C09DE0 /* NetworkManager.swift in Sources */,
@@ -1032,6 +1138,9 @@
 				3904C79E2282DCD400D3D057 /* TakePhotoManager.swift in Sources */,
 				3993B9112334C7A200174C96 /* ASVideoContainer.swift in Sources */,
 				3904B2DB2292960C004236F2 /* TagViewCell.swift in Sources */,
+				E03D5E4A25B833D4004DD36D /* LoginViewController.swift in Sources */,
+				E04F696B25BA6A16008DC422 /* RightEar.swift in Sources */,
+				E04F695C25BA6A16008DC422 /* CritterView.swift in Sources */,
 				3993B8FB2334AABE00174C96 /* ListVideoViewController.swift in Sources */,
 				3932102122939EFE00C09DE0 /* LoadMoreView.swift in Sources */,
 				3904B2F12292A6B2004236F2 /* LoadingHelper.swift in Sources */,
@@ -1045,16 +1154,22 @@
 				3915980D228D689600152279 /* BadgeButton+Extension.swift in Sources */,
 				3932100E2293992F00C09DE0 /* LimoAlertView.swift in Sources */,
 				3904C79B2282DCD400D3D057 /* CropImageViewController.swift in Sources */,
+				E04F696925BA6A16008DC422 /* LeftEar.swift in Sources */,
 				3915980A228D689600152279 /* UIStoryboard+Extension.swift in Sources */,
+				E04F695D25BA6A16008DC422 /* CritterAssets.swift in Sources */,
+				E04F696525BA6A16008DC422 /* RightArm.swift in Sources */,
 				393210002293944400C09DE0 /* SwiftDecoder.swift in Sources */,
 				39159808228D689600152279 /* UIViewX.swift in Sources */,
+				E04F696025BA6A16008DC422 /* LeftEye.swift in Sources */,
 				393210352293A0DE00C09DE0 /* ListItemViewCell.swift in Sources */,
 				3904B2D72292960C004236F2 /* HashTagListViewController.swift in Sources */,
 				39159814228D689600152279 /* UIImageViewX.swift in Sources */,
 				3904B2E52292A37B004236F2 /* BaseTableViewCell.swift in Sources */,
+				E02DC1CC25B91C66004D6423 /* FirebaseAuthenticator.swift in Sources */,
 				393210072293955000C09DE0 /* DataModel.swift in Sources */,
 				393210382293AB3C00C09DE0 /* ChildViewController.swift in Sources */,
 				3904B3022292A797004236F2 /* PresentMenuAnimator.swift in Sources */,
+				E02DC1CD25B91C66004D6423 /* SocialAuthenticator.swift in Sources */,
 				39159806228D689600152279 /* UIScreen+Extension.swift in Sources */,
 				390C819622AA7850005799FE /* TamOcViewController.swift in Sources */,
 				39159811228D689600152279 /* UIViewControllerX.swift in Sources */,
@@ -1062,13 +1177,16 @@
 				3904C79C2282DCD400D3D057 /* UIImage+Extension.swift in Sources */,
 				39159802228D689600152279 /* UIBarButtonItem+Extension.swift in Sources */,
 				390C819A22AA78ED005799FE /* TamOcCollectionViewCell.swift in Sources */,
+				E04F696825BA6A16008DC422 /* LeftArm.swift in Sources */,
 				3915980E228D689600152279 /* UIButtonX.swift in Sources */,
 				39159803228D689600152279 /* UIViewXRadialGradient.swift in Sources */,
+				E04F697325BA738E008DC422 /* CATransform3D+Ext.swift in Sources */,
 				3932102A22939F0D00C09DE0 /* FooterLoadMoreView.swift in Sources */,
 				390982C623332CF5006F2697 /* ChatVC.swift in Sources */,
 				3915980C228D689600152279 /* UINavigation+Extension.swift in Sources */,
 				39159816228D689600152279 /* UIVisualEffectViewX.swift in Sources */,
 				3932102222939EFE00C09DE0 /* MyTableView.swift in Sources */,
+				E04F695E25BA6A16008DC422 /* CritterAnimatable.swift in Sources */,
 				3904B2E32292A37B004236F2 /* FeedCollectionViewLayout.swift in Sources */,
 				3993B9172334C7BA00174C96 /* ShotTableViewCell.swift in Sources */,
 				3932102822939F0D00C09DE0 /* MyCollectionView.swift in Sources */,
@@ -1077,10 +1195,14 @@
 				390982CF23332D0E006F2697 /* ChatRightTVCell.swift in Sources */,
 				1F124CEF2562DA1600C3123F /* CustomTextView.swift in Sources */,
 				3904B2FE2292A797004236F2 /* MenuHelper.swift in Sources */,
+				E04F695F25BA6A16008DC422 /* RightEye.swift in Sources */,
+				E04F696325BA6A16008DC422 /* RightEarMask.swift in Sources */,
+				E04F696425BA6A16008DC422 /* Head.swift in Sources */,
 				3993B9162334C7BA00174C96 /* AppUtilities.swift in Sources */,
 				39159812228D689600152279 /* Double+Extension.swift in Sources */,
 				3932102022939EFE00C09DE0 /* MyTableViewCell.swift in Sources */,
 				3932102F22939F6000C09DE0 /* PhotoGallery.swift in Sources */,
+				E04F696625BA6A16008DC422 /* LeftEarMask.swift in Sources */,
 				39320FFF2293944400C09DE0 /* NotiRouter.swift in Sources */,
 				39159801228D689600152279 /* UILabelX.swift in Sources */,
 				3904B3012292A797004236F2 /* DismissMenuAnimator.swift in Sources */,
@@ -1165,6 +1287,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1226,6 +1349,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -1257,18 +1381,21 @@
 		};
 		3904C78A2282DC9300D3D057 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 182E7BC2DD1BBC8812B4FC43 /* Pods-TakePhotoManager.debug.xcconfig */;
+			baseConfigurationReference = ACE2F6BD43C6A8BC677B0309 /* Pods-TakePhotoManager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5TP8PA3939;
+				CODE_SIGN_ENTITLEMENTS = TakePhotoManager/TakePhotoManager.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = MF2N2WC9JV;
 				INFOPLIST_FILE = "$(SRCROOT)/TakePhotoManager/SupportFile/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.danghung.TakePhotoManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FLYG.Core;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = iOS.Core;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1276,18 +1403,21 @@
 		};
 		3904C78B2282DC9300D3D057 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD07B9C6A24BF4D645753B3D /* Pods-TakePhotoManager.release.xcconfig */;
+			baseConfigurationReference = A0D017A806934F6F43741E05 /* Pods-TakePhotoManager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5TP8PA3939;
+				CODE_SIGN_ENTITLEMENTS = TakePhotoManager/TakePhotoManager.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = MF2N2WC9JV;
 				INFOPLIST_FILE = "$(SRCROOT)/TakePhotoManager/SupportFile/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.danghung.TakePhotoManager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.FLYG.Core;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = iOS.Core;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

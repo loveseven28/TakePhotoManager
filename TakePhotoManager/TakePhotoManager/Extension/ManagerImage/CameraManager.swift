@@ -44,6 +44,10 @@ class CameraManager: NSObject{
         alert.addAction(action)
         alert.addAction(action1)
         alert.addAction(action2)
+        if let popoverPresentationController = alert.popoverPresentationController {
+            popoverPresentationController.sourceView = self.rootViewController.view
+            popoverPresentationController.sourceRect = self.chooseImageButton.bounds
+        }
         rootViewController.present(alert, animated: true, completion: nil)
     }
     

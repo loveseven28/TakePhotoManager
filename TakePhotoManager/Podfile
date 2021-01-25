@@ -17,6 +17,11 @@ target 'TakePhotoManager' do
   pod 'BSImagePicker', '~> 2.8'
   pod 'AccountKit'
   pod 'GrowingTextView', '0.6.1'
+  #Social login
+  pod 'Firebase/Auth'
+  pod 'FBSDKCoreKit'
+  pod 'GoogleSignIn'
+  pod 'FBSDKLoginKit'
 #  pod "MomoiOSSwiftSdk", :git => "https://github.com/momodevelopment/MomoiOSSwiftSdk.git", :branch => "master", submodules: true
 
 end
